@@ -1313,7 +1313,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2 class="text-2xl font-extrabold font-[var(--font-title-secondary)] text-center mb-6 text-gray-800">
                     Zlatá bula sicilská
                 </h2>
-                <div class="flex flex-col items-center justify-center">
+                <div class="relative group preview-gallery-wrapper">
+                    <div class="flex overflow-x-auto gap-4 p-4 scroll-smooth scrollbar-hide" data-gallery-id="golden-bull">
+                        <div class="image-mat-wrapper p-2 flex-shrink-0 w-2/3 sm:w-1/3">
+                            <img src="https://dejepig.wz.cz/images/Zlata_bula_sicilska.webp" alt="Zlatá bula sicilská"
+                                 onclick="openImageZoom(this)" class="cursor-pointer !max-w-full">
+                        </div>
+                        <div class="image-mat-wrapper p-2 flex-shrink-0 w-2/3 sm:w-1/3">
+                            <img src="https://dejepig.wz.cz/images/Zlata_bula_sicilska_02.jpg" alt="Zlatá bula sicilská - detail"
+                                 onclick="openImageZoom(this)" class="cursor-pointer !max-w-full">
+                        </div>
+                    </div>
+                    <button onclick="scrollGallery(this, -1)" class="preview-gallery-arrow arrow-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button onclick="scrollGallery(this, 1)" class="preview-gallery-arrow arrow-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-6">
                     <a href="https://www.nacr.cz/wp-content/uploads/2020/10/labyrint-ZBS.pdf"
                        target="_blank"
                        rel="noopener noreferrer"
