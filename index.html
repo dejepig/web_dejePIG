@@ -1307,33 +1307,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div id="golden-bull-sicily" class="max-w-4xl mx-auto mt-12 p-6 bg-white rounded-lg shadow-xl border-t-8 border-amber-600">
                 <h2 class="text-2xl font-extrabold font-[var(--font-title-secondary)] text-center mb-6 text-gray-800">
-                    Zlatá bula sicilská
+                    Zlatá bula sicilská (1212)
                 </h2>
-                <div class="relative group preview-gallery-wrapper">
-                    <div class="flex overflow-x-auto gap-4 p-4 scroll-smooth scrollbar-hide" data-gallery-id="golden-bull">
-                        <div class="image-mat-wrapper p-2 flex-shrink-0 w-2/3 sm:w-1/3">
-                            <img src="https://dejepig.wz.cz/images/Zlata_bula_sicilska.webp" alt="Zlatá bula sicilská"
-                                 onclick="openImageZoom(this)" class="cursor-pointer !max-w-full">
+                <div class="flex flex-col md:flex-row gap-4 items-center">
+                    <div class="relative group preview-gallery-wrapper flex-1">
+                        <div class="flex overflow-x-auto gap-4 p-4 scroll-smooth scrollbar-hide" data-gallery-id="golden-bull">
+                            <div class="inline-block p-1 flex-shrink-0" style="background-color: #f7f2e8; border-radius: 6px; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);">
+                                <img src="https://dejepig.wz.cz/images/Zlata_bula_sicilska.webp" alt="Zlatá bula sicilská"
+                                     onclick="openImageZoom(this)" class="cursor-pointer max-h-[120px] object-contain" style="max-width: 100% !important; width: auto; display: block;">
+                            </div>
+                            <div class="inline-block p-1 flex-shrink-0" style="background-color: #f7f2e8; border-radius: 6px; box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);">
+                                <img src="https://dejepig.wz.cz/images/Zlata_bula_sicilska_02.jpg" alt="Zlatá bula sicilská - detail"
+                                     onclick="openImageZoom(this)" class="cursor-pointer max-h-[120px] object-contain" style="max-width: 100% !important; width: auto; display: block;">
+                            </div>
                         </div>
-                        <div class="image-mat-wrapper p-2 flex-shrink-0 w-2/3 sm:w-1/3">
-                            <img src="https://dejepig.wz.cz/images/Zlata_bula_sicilska_02.jpg" alt="Zlatá bula sicilská - detail"
-                                 onclick="openImageZoom(this)" class="cursor-pointer !max-w-full">
-                        </div>
+                        <button onclick="scrollGallery(this, -1)" class="preview-gallery-arrow arrow-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button onclick="scrollGallery(this, 1)" class="preview-gallery-arrow arrow-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
                     </div>
-                    <button onclick="scrollGallery(this, -1)" class="preview-gallery-arrow arrow-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-                    </button>
-                    <button onclick="scrollGallery(this, 1)" class="preview-gallery-arrow arrow-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                    </button>
-                </div>
-                <div class="flex flex-col items-center justify-center mt-6">
-                    <a href="https://www.nacr.cz/wp-content/uploads/2020/10/labyrint-ZBS.pdf"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="px-8 py-4 bg-[var(--color-medieval)] text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 text-center">
-                        PDF
-                    </a>
+                    <div class="flex-shrink-0">
+                        <a href="https://www.nacr.cz/wp-content/uploads/2020/10/labyrint-ZBS.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="px-8 py-4 bg-[var(--color-medieval)] text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 text-center whitespace-nowrap">
+                            PDF
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
