@@ -738,6 +738,21 @@ function loadVideo(element, videoId) {
     `;
 }
 
+function playHiddenVideo(wrapperId, videoId) {
+    const container = document.getElementById(wrapperId);
+    if (!container) return;
+
+    container.classList.remove('hidden');
+
+    let placeholder = container.querySelector('.youtube-thumbnail-wrapper');
+    if (!placeholder) {
+        container.innerHTML = '<div class="youtube-thumbnail-wrapper absolute top-0 left-0 w-full h-full"></div>';
+        placeholder = container.querySelector('.youtube-thumbnail-wrapper');
+    }
+
+    loadVideo(placeholder, videoId);
+}
+
 // Event delegation pro submenu položky - přidáme hned po načtení DOM
 function setupSubmenuListeners() {
     const lockMenu = document.getElementById('lock-dropdown-menu');
