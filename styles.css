@@ -136,8 +136,8 @@ nav { transition: transform 0.3s ease-in-out; }
 
 /* Specifické styly pro Egypt lock menu */
 #egypt-lock-dropdown-menu {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
     margin-top: 0.5rem;
     text-align: left;
 }
