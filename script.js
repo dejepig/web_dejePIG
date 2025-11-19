@@ -514,7 +514,7 @@ function checkPassword(inputId) {
     if (inputId === 'mesopotamia-password-input') {
         correctPassword = '812iiíl1';
     } else if (inputId === 'pyramid-password-input') {
-        correctPassword = 'ds224';
+        correctPassword = 'ds234';
     } else {
         correctPassword = '0303'; // Výchozí heslo pro ostatní sekce
     }
