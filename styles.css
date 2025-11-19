@@ -878,3 +878,10 @@ nav { transition: transform 0.3s ease-in-out; }
     opacity: 1;
     visibility: visible;
 }
+
+/* Skrýt tooltip, když je menu otevřené (aria-expanded="true") */
+.tooltip-custom[data-tooltip][aria-expanded="true"]::before,
+.tooltip-custom[data-tooltip][aria-expanded="true"]::after {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
