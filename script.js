@@ -342,6 +342,33 @@ function closeSumerLockMenu() {
     if (button) button.setAttribute('aria-expanded', 'false');
 }
 
+function toggleEgyptLockMenu(event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    const menu = document.getElementById('egypt-lock-dropdown-menu');
+    const button = document.getElementById('egypt-lock-button');
+    if (!menu || !button) return;
+    
+    const isHidden = menu.classList.contains('hidden');
+    
+    if (isHidden) {
+        menu.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+    } else {
+        menu.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+    }
+}
+
+function closeEgyptLockMenu() {
+    const menu = document.getElementById('egypt-lock-dropdown-menu');
+    const button = document.getElementById('egypt-lock-button');
+    if (menu) menu.classList.add('hidden');
+    if (button) button.setAttribute('aria-expanded', 'false');
+}
+
 function togglePrincipalityLockMenu(event) {
     if (event) {
         event.preventDefault();
@@ -486,6 +513,8 @@ function checkPassword(inputId) {
     let correctPassword;
     if (inputId === 'mesopotamia-password-input') {
         correctPassword = '812iiíl1';
+    } else if (inputId === 'pyramid-password-input') {
+        correctPassword = 'ds224';
     } else {
         correctPassword = '0303'; // Výchozí heslo pro ostatní sekce
     }
@@ -516,6 +545,8 @@ function checkPassword(inputId) {
         // Pro Mezopotámii použít speciální modální okno
         if (inputId === 'mesopotamia-password-input') {
             openModal('mesopotamia-success-modal');
+        } else if (inputId === 'pyramid-password-input') {
+            openModal('pyramid-success-modal');
         } else {
             openModal('password-success-modal');
         }
@@ -849,6 +880,13 @@ window.onload = () => {
         const sumerLockMenu = document.getElementById('sumer-lock-dropdown-menu');
         if (sumerLockMenu && sumerLockButton && !sumerLockButton.contains(event.target) && !sumerLockMenu.contains(event.target)) {
             closeSumerLockMenu();
+        }
+        
+        // Zavření Egypt lock menu při kliknutí mimo něj
+        const egyptLockButton = document.getElementById('egypt-lock-button');
+        const egyptLockMenu = document.getElementById('egypt-lock-dropdown-menu');
+        if (egyptLockMenu && egyptLockButton && !egyptLockButton.contains(event.target) && !egyptLockMenu.contains(event.target)) {
+            closeEgyptLockMenu();
         }
         
         // Zavření Principality lock menu při kliknutí mimo něj
