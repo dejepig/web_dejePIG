@@ -134,6 +134,18 @@ nav { transition: transform 0.3s ease-in-out; }
     text-align: left;
 }
 
+/* Specifické styly pro Egypt lock menu */
+#egypt-lock-dropdown-menu {
+    right: 0;
+    left: auto;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+#egypt-lock-dropdown-menu .lock-dropdown-item {
+    text-align: left;
+}
+
 /* Specifické styly pro Principality a Kingdom lock menu */
 #principality-lock-dropdown-menu,
 #kingdom-lock-dropdown-menu {
