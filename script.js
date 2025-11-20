@@ -505,6 +505,14 @@ function togglePasswordVisibility(inputId, checkboxId) {
     }
 }
 
+// Funkce pro normalizaci textu - odstranění diakritiky a převedení na malá písmena
+function normalizeText(text) {
+    return text
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, ''); // Odstranění diakritických znaků
+}
+
 function checkPassword(inputId) {
     const input = document.getElementById(inputId);
     const password = input.value.trim();
@@ -537,7 +545,11 @@ function checkPassword(inputId) {
     };
     const passwordModalId = modalIdMap[inputId];
     
-    if (password === correctPassword) {
+    // Porovnání normalizovaných verzí (bez diakritiky a case-insensitive)
+    const normalizedPassword = normalizeText(password);
+    const normalizedCorrectPassword = normalizeText(correctPassword);
+    
+    if (normalizedPassword === normalizedCorrectPassword) {
         // Správné heslo - zavřít modální okno s heslem a zobrazit zprávu o úspěchu
         if (passwordModalId) {
             closeModal(passwordModalId);
