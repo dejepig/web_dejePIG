@@ -864,6 +864,12 @@ window.onload = () => {
                     closeModal(modalId);
                 }
             });
+            
+            // Zavření image-zoom-modal, pokud je otevřený
+            const imageZoomModal = document.getElementById('image-zoom-modal');
+            if (imageZoomModal && !imageZoomModal.classList.contains('modal-hidden')) {
+                closeImageZoom({ target: { id: 'image-zoom-modal' } });
+            }
         }
     });
     

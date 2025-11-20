@@ -1833,8 +1833,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
 <!-- MODAL PRO ÚSPĚŠNÉ HESLO - MEZOPOTÁMIE -->
-    <div id="mesopotamia-success-modal" class="modal-overlay modal-hidden">
-        <div class="modal-content mesopotamia-success-content">
+    <div id="mesopotamia-success-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'mesopotamia-success-modal') closeModal('mesopotamia-success-modal')">
+        <div class="modal-content mesopotamia-success-content" onclick="event.stopPropagation()">
             <h2 class="text-2xl font-bold font-[var(--font-display)] mb-4 border-b pb-2 text-center"><strong>GRATULUJI!</strong></h2>
             <p class="text-lg font-bold font-[var(--font-body)] mb-4 text-center">Král Aššurbanipal, který zrovna holýma rukama bojuje se lvem, ti také gratuluje!</p>
             <div class="text-lg font-[var(--font-body)] mb-6 space-y-4">
@@ -1853,8 +1853,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- MODAL: PRVNÍ PYRAMIDA - ÚSPĚCH -->
-    <div id="pyramid-success-modal" class="modal-overlay modal-hidden">
-        <div class="modal-content mesopotamia-success-content">
+    <div id="pyramid-success-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'pyramid-success-modal') closeModal('pyramid-success-modal')">
+        <div class="modal-content mesopotamia-success-content" onclick="event.stopPropagation()">
             <h2 class="text-2xl font-bold font-[var(--font-display)] mb-4 border-b pb-2 text-center"><strong>GRATULUJI!</strong></h2>
             <p class="text-lg font-bold font-[var(--font-body)] mb-4 text-center">Faraon Džoser se sice moc nadšeně netváří, ve skutečnosti je ale potěšen, že jsi zkoumal jeho pyramidu!</p>
             <div class="text-lg font-[var(--font-body)] mb-6 space-y-4">
@@ -1862,7 +1862,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <img src="https://dejepig.wz.cz/images/Faraon_Dzoser.jpg" alt="Faraon Džoser" class="max-w-[150px] w-full h-auto rounded-lg">
                 </div>
                 <p>Panováním <strong>faraona Džosera</strong> začíná jedno z nejskvělejších období v dějinách Egypta, někdy též nazývané „Džoserovo století". Sám faraon vládl jako neomezený monarcha a značně rozšířil území své říše.</p>
-                <p>Za jeho vlády prý vypukl veliký hlad, protože se Nil už nevyléval ze svého koryta. Půda tak byla suchá a bez úrodného bahýnka, které pravidelné záplavy přinášely. Jeden dochovaný text říká, že 7 let byla bída a hlad. Král nevěděl, proč bohové tuto katastrofu dopouštějí, a tak nařídil <strong>knězi Imhotepovi</strong>, aby to zjistil. Ten po usilovném pátrání došel k závěru, že za to může bůh Chnum, kterého je potřeba si nějak udobřit. Faraon tedy nařídil, aby se mu okamžitě obětoval chléb, pivo, voli a drůbež. Kněz to udělal a ejhle, Nil se opět rozvodnil a hlad skončil.</p>
+                <p>Za jeho vlády prý vypukl <strong>hladomor</strong> způsobený neúrodou, protože <strong>Nil</strong> už se nevyléval ze svého koryta. Půda tak byla suchá a bez úrodného bahýnka, které pravidelné záplavy přinášely. Jeden dochovaný text říká, že bída a hlad trvaly 7 let. Král nevěděl, proč bohové tuto katastrofu dopouštějí, a tak nařídil <strong>knězi Imhotepovi</strong>, aby to zjistil. Ten po usilovném pátrání došel k závěru, že za to může bůh Chnum, kterého je potřeba si nějak udobřit. Faraon tedy nařídil, aby mu okamžitě obětovali chléb, pivo, voli a drůbež. Kněz to udělal a ejhle, <strong>Nil</strong> se opět rozvodnil a hlad skončil.</p>
                 <p>Zmíněný <strong>kněz Imhotep</strong> je neobyčejně zajímavá postava. To on byl <strong>architektem</strong> první pyramidy, které dnes říkáme Džoserova. Na jedné faraonově soše je zapsáno i Imhotepovo jméno s jeho tituly: „Strážce pečeti krále Egypta, první po králi Egypta, správce velikého paláce, dědičný pán, největší z velekněží, Imhotep, stavitel, sochař, zhotovitel kamenných váz."</p>
                 <p>Na důkaz, že jsi odemkl zámek a dočetl text až sem, teď jdi za paní učitelkou / panem učitelem a řekni jí/mu, že <strong>Imhotep byl borec</strong>. Potom dostaneš poslední úkol.</p>
             </div>
@@ -1873,8 +1873,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 <!-- MODAL PRO ÚSPĚŠNÉ HESLO -->
-    <div id="password-success-modal" class="modal-overlay modal-hidden">
-        <div class="modal-content">
+    <div id="password-success-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'password-success-modal') closeModal('password-success-modal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
             <h2 class="text-2xl font-bold font-[var(--font-display)] mb-4 border-b pb-2">Správně!</h2>
             <p class="text-lg font-[var(--font-body)] mb-6">Správně jsi vyřešil úlohu.</p>
             <div class="flex justify-end">
@@ -1884,8 +1884,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- MODAL PRO CHYBNÉ HESLO -->
-    <div id="password-error-modal" class="modal-overlay modal-hidden">
-        <div class="modal-content">
+    <div id="password-error-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'password-error-modal') closeModal('password-error-modal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
             <h2 class="text-2xl font-bold font-[var(--font-display)] mb-4 border-b pb-2">Chyba</h2>
             <p class="text-lg font-[var(--font-body)] mb-6">Heslo není správné.</p>
             <div class="flex justify-end">
