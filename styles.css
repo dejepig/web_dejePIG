@@ -11,7 +11,8 @@
     --color-prehistory: #15803d;    /* Pravěk (Zelená - Změněno) */
     --color-medieval: #0D47A1;      /* Středověk (Rich Blue) */
     --color-19thcentury: #800080;   /* 19. století (Fialová) */
-    --color-modern: #d4af37;        /* Moderní dějiny (Zlatavá) */
+    --color-modern: #d4af37;        /* 20. století (Zlatavá) */
+    --color-21stcentury: #1e40af;   /* 21. století (Tmavě modrá) */
 
      /* Dynamické barvy pro rámečky - Nový svět */
     --color-las-casas: #dc2626; /* red-700 */

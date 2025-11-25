@@ -100,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                             </div>
                             <div class="lock-dropdown-item-with-submenu">
-                                <a href="javascript:void(0)" class="lock-dropdown-item" data-has-submenu="true">Moderní doba</a>
+                                <a href="javascript:void(0)" class="lock-dropdown-item" data-has-submenu="true">20. století</a>
                                 <div class="lock-submenu">
                                     <a href="javascript:void(0)" onclick="openModal('jan-palach-password-modal'); closeLockMenu();" class="lock-dropdown-item">Jan Palach</a>
                                     <a href="javascript:void(0)" onclick="openModal('1968-password-modal'); closeLockMenu();" class="lock-dropdown-item">1968</a>
@@ -151,7 +151,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="#medieval" onclick="showSection('medieval'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-medieval)] text-[var(--color-medieval)]">Středověk</a>
                 <a href="#earlymodern" onclick="showSection('earlymodern'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-early-modern)] text-[var(--color-early-modern)]">Novověk</a>
                 <a href="#19thcentury" onclick="showSection('19thcentury'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-19thcentury)] text-[var(--color-19thcentury)]">19. století</a>
-                <a href="#modern" onclick="showSection('modern'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-modern)] text-[var(--color-modern)]">Moderní doba</a>
+                <a href="#modern" onclick="showSection('modern'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-modern)] text-[var(--color-modern)]">20. století</a>
+                <a href="#21stcentury" onclick="showSection('21stcentury'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-21stcentury)] text-[var(--color-21stcentury)]">21. století</a>
             </div>
         </nav>
         <!-- Odstraněný text archivu -->
@@ -190,7 +191,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </section>
             <section class="p-6 md:p-10 bg-white rounded-2xl shadow-2xl border-t-8 border-[var(--color-modern)] transform transition duration-500 hover:shadow-3xl hover:scale-[1.03] flex items-center justify-center">
                 <a href="#modern" onclick="showSection('modern')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-modern)]/50">
-                    <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-modern)] bulvar-title uppercase leading-tight">Moderní doba</p>
+                    <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-modern)] bulvar-title uppercase leading-tight">20. století</p>
+                </a>
+            </section>
+            <section class="p-6 md:p-10 bg-white rounded-2xl shadow-2xl border-t-8 border-[var(--color-21stcentury)] transform transition duration-500 hover:shadow-3xl hover:scale-[1.03] flex items-center justify-center">
+                <a href="#21stcentury" onclick="showSection('21stcentury')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-21stcentury)]/50">
+                    <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
                 </a>
             </section>
         </div>
@@ -1875,7 +1881,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- VRÁCENÁ SEKCE MODERNÍ DLOUBAK -->
     <section id="modern-section" class="hidden pb-20 pt-10">
         <div class="max-w-4xl mx-auto mb-10 text-center px-4">
-            <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-modern)] bulvar-title uppercase leading-tight">Moderní doba</p>
+            <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-modern)] bulvar-title uppercase leading-tight">20. století</p>
         </div>
         <div class="newspaper-container" data-color="--color-modern" data-rgb="182, 87, 117" id="clanek-moderni-doba">
             <header>
@@ -1884,6 +1890,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </header>
             <div class="article-body">
                 <p>Houston, 1969 – Včerejší večer se stal historickým milníkem, když astronaut Neil Armstrong poprvé otiskl botu do měsíčního prachu. Tento "velký skok pro lidstvo" završil desetiletí trvající vesmírný závod mezi velmocemi. Triumf Spojených států je ohromující, avšak globální politika zůstává napjatá. Studená válka dál vrhá stín na svět a hrozba jaderního konfliktu je stále reálná. Zatímco miliony lidí sledovaly přenos z Měsíce v úžasu, jinde probíhají krvavé konflikty a protesty za občanská práva otřásají západními demokraciemi. Lidstvo dokázalo dobýt vesmír, ale stále zápasí s problémy na vlastní planetě. Otázkou zůstává, zda triumf vědy a techniky dokáže překonat rozdíly a nenávist, které nás dělí.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCE 21. STOLETÍ -->
+    <section id="21stcentury-section" class="hidden pb-20 pt-10">
+        <div class="max-w-4xl mx-auto mb-10 text-center px-4">
+            <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
+        </div>
+        <div class="newspaper-container" data-color="--color-21stcentury" data-rgb="30, 64, 175" id="clanek-21st-century">
+            <header>
+                <h1 class="main-article-title main-article-title-dynamic">21. STOLETÍ</h1>
+                <h2 class="subtitle-article">Obsah bude doplněn.</h2>
+            </header>
+            <div class="article-body">
+                <p>Obsah sekce 21. století bude doplněn.</p>
             </div>
         </div>
     </section>

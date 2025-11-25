@@ -143,11 +143,11 @@ let currentActiveSubSubsection = null;
 let currentGalleryImages = [];
 let currentGalleryIndex = 0;
 
-const AVAILABLE_SECTIONS = ['home', 'prehistory', 'antiquity', 'medieval', 'earlymodern', '19thcentury', 'modern'];
+const AVAILABLE_SECTIONS = ['home', 'prehistory', 'antiquity', 'medieval', 'earlymodern', '19thcentury', 'modern', '21stcentury'];
 
 // Slovník pro názvy (již není potřeba pro drobečky, ale může se hodit)
 const BREADCRUMB_NAMES = {
-    'home': 'Domů', 'prehistory': 'Pravěk', 'antiquity': 'Starověk', 'medieval': 'Středověk', 'earlymodern': 'Novověk', '19thcentury': '19. století', 'modern': 'Moderní dloubak',
+    'home': 'Domů', 'prehistory': 'Pravěk', 'antiquity': 'Starověk', 'medieval': 'Středověk', 'earlymodern': 'Novověk', '19thcentury': '19. století', 'modern': '20. století', '21stcentury': '21. století',
     'mesopotamia': 'Mezopotámie', 'egypt': 'Egypt', 'rim': 'Řím', 'greece': 'Řecko', 'renaissance': 'Renesance', 'boulevard': 'Bulvár', 'habsburg': 'Nástup Habsburků', 'newworld': 'Nový svět',
     'sumerove': 'Sumerové', 'babylon': 'Babylon', 'punskevalky': 'Punské války', 'kartago': 'Kartágo'
 };
