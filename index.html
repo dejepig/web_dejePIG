@@ -150,9 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="#antiquity" onclick="showSection('antiquity'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-antiquity)] text-[var(--color-antiquity)]">Starověk</a>
                 <a href="#medieval" onclick="showSection('medieval'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-medieval)] text-[var(--color-medieval)]">Středověk</a>
                 <a href="#earlymodern" onclick="showSection('earlymodern'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-early-modern)] text-[var(--color-early-modern)]">Novověk</a>
-                <a href="#19thcentury" onclick="showSection('19thcentury'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-19thcentury)] text-[var(--color-19thcentury)]">19. století</a>
-                <a href="#modern" onclick="showSection('modern'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-modern)] text-[var(--color-modern)]">20. století</a>
-                <a href="#21stcentury" onclick="showSection('21stcentury'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-21stcentury)] text-[var(--color-21stcentury)]">21. století</a>
+                <a href="#modernhistory" onclick="showSection('modernhistory'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-modern-history)] text-[var(--color-modern-history)]">Moderní dějiny</a>
             </div>
         </nav>
         <!-- Odstraněný text archivu -->
@@ -184,19 +182,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-early-modern)] bulvar-title uppercase leading-tight">Novověk</p>
                 </a>
             </section>
-            <section class="p-6 md:p-10 bg-white rounded-2xl shadow-2xl border-t-8 border-[var(--color-19thcentury)] transform transition duration-500 hover:shadow-3xl hover:scale-[1.03]">
-                <a href="#19thcentury" onclick="showSection('19thcentury')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-19thcentury)]/50 flex items-center justify-center">
-                    <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-19thcentury)] bulvar-title uppercase leading-tight">19. století</p>
-                </a>
-            </section>
-            <section class="p-6 md:p-10 bg-white rounded-2xl shadow-2xl border-t-8 border-[var(--color-modern)] transform transition duration-500 hover:shadow-3xl hover:scale-[1.03] flex items-center justify-center">
-                <a href="#modern" onclick="showSection('modern')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-modern)]/50">
-                    <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-modern)] bulvar-title uppercase leading-tight">20. století</p>
-                </a>
-            </section>
-            <section class="p-6 md:p-10 bg-white rounded-2xl shadow-2xl border-t-8 border-[var(--color-21stcentury)] transform transition duration-500 hover:shadow-3xl hover:scale-[1.03] flex items-center justify-center">
-                <a href="#21stcentury" onclick="showSection('21stcentury')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-21stcentury)]/50">
-                    <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
+            <section class="p-6 md:p-10 bg-white rounded-2xl shadow-2xl border-t-8 border-[var(--color-modern-history)] transform transition duration-500 hover:shadow-3xl hover:scale-[1.03] flex items-center justify-center">
+                <a href="#modernhistory" onclick="showSection('modernhistory')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-modern-history)]/50">
+                    <p class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-[var(--color-modern-history)] bulvar-title uppercase leading-tight">Moderní dějiny</p>
                 </a>
             </section>
         </div>
@@ -1863,7 +1851,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
     <!-- VRÁCENÁ SEKCE 19. STOLETÍ -->
-    <section id="19thcentury-section" class="hidden pb-20 pt-10">
+    <!-- SEKCE: MODERNÍ DĚJINY (s dlaždicemi) -->
+    <section id="modernhistory-section" class="hidden pb-20 pt-10">
+        <div id="modernhistory-tiles-view">
+            <div class="max-w-4xl mx-auto mb-10 text-center px-4">
+                <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-modern-history)] bulvar-title uppercase leading-tight">Moderní dějiny</p>
+            </div>
+            <div class="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-center px-4 sm:px-6 lg:px-8">
+                <!-- 19. století -->
+                <section class="w-full p-8 md:p-12 bg-white rounded-2xl shadow-xl border-t-8 border-[var(--color-19thcentury)] transform transition duration-500 hover:shadow-2xl hover:scale-[1.03]">
+                    <a href="#modernhistory/19thcentury" onclick="showSubsection('modernhistory', '19thcentury')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-19thcentury)]/50 flex items-center justify-center">
+                        <p class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--color-19thcentury)] bulvar-title uppercase leading-tight">19. století</p>
+                    </a>
+                </section>
+                <!-- 20. století -->
+                <section class="w-full p-8 md:p-12 bg-white rounded-2xl shadow-xl border-t-8 border-[var(--color-modern)] transform transition duration-500 hover:shadow-2xl hover:scale-[1.03]">
+                    <a href="#modernhistory/modern" onclick="showSubsection('modernhistory', 'modern')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-modern)]/50 flex items-center justify-center">
+                        <p class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--color-modern)] bulvar-title uppercase leading-tight">20. století</p>
+                    </a>
+                </section>
+                <!-- 21. století -->
+                <section class="w-full p-8 md:p-12 bg-white rounded-2xl shadow-xl border-t-8 border-[var(--color-21stcentury)] transform transition duration-500 hover:shadow-2xl hover:scale-[1.03]">
+                    <a href="#modernhistory/21stcentury" onclick="showSubsection('modernhistory', '21stcentury')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-21stcentury)]/50 flex items-center justify-center">
+                        <p class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
+                    </a>
+                </section>
+            </div>
+        </div>
+
+        <!-- PODSEKCE: 19. STOLETÍ -->
+        <div id="modernhistory-19thcentury-section" class="hidden">
+            <section id="19thcentury-section" class="pb-20 pt-10">
         <div class="max-w-4xl mx-auto mb-10 text-center px-4">
             <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-19thcentury)] bulvar-title uppercase leading-tight">19. století</p>
         </div>
@@ -1876,10 +1894,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>Manchester, 1845 – S nástupem parních strojů a hromadné výroby prochází celá Británie bezprecedentní transformací. Kouřící továrny dominují městské krajině, zatímco železnice propojují kdysi vzdálená místa rychlostí, kterou si naši předkové nedokázali představit. I když zboží je nyní dostupné pro masy, sociální důsledky jsou drastické. Dělníci, včetně dětí, pracují v nelidských podmínkách dvanáct a více hodin denně za almužnu. Včera se před místní textilkou sešlo tisíce zástupců „nové dělnické třídy“, kteří požadují lepší platy, kratší pracovní dobu a bezpečnější prostředí. Vláda reaguje tvrdě, považuje protesty za podvratné, ale síla nově probuzené společnosti se nedá snadno umlčet. Vědci předpovídají, že tento "věk pokroku" buď pozvedne lidstvo k nevídaným výšinám, nebo zničí jeho sociální základy.</p>
             </div>
         </div>
-    </section>
+            </section>
+        </div>
 
-      <!-- VRÁCENÁ SEKCE MODERNÍ DLOUBAK -->
-    <section id="modern-section" class="hidden pb-20 pt-10">
+        <!-- PODSEKCE: 20. STOLETÍ -->
+        <div id="modernhistory-modern-section" class="hidden">
+            <section id="modern-section" class="pb-20 pt-10">
         <div class="max-w-4xl mx-auto mb-10 text-center px-4">
             <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-modern)] bulvar-title uppercase leading-tight">20. století</p>
         </div>
@@ -1892,21 +1912,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>Houston, 1969 – Včerejší večer se stal historickým milníkem, když astronaut Neil Armstrong poprvé otiskl botu do měsíčního prachu. Tento "velký skok pro lidstvo" završil desetiletí trvající vesmírný závod mezi velmocemi. Triumf Spojených států je ohromující, avšak globální politika zůstává napjatá. Studená válka dál vrhá stín na svět a hrozba jaderního konfliktu je stále reálná. Zatímco miliony lidí sledovaly přenos z Měsíce v úžasu, jinde probíhají krvavé konflikty a protesty za občanská práva otřásají západními demokraciemi. Lidstvo dokázalo dobýt vesmír, ale stále zápasí s problémy na vlastní planetě. Otázkou zůstává, zda triumf vědy a techniky dokáže překonat rozdíly a nenávist, které nás dělí.</p>
             </div>
         </div>
-    </section>
-
-    <!-- SEKCE 21. STOLETÍ -->
-    <section id="21stcentury-section" class="hidden pb-20 pt-10">
-        <div class="max-w-4xl mx-auto mb-10 text-center px-4">
-            <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
+            </section>
         </div>
-        <div class="newspaper-container" data-color="--color-21stcentury" data-rgb="30, 64, 175" id="clanek-21st-century">
-            <header>
-                <h1 class="main-article-title main-article-title-dynamic">21. STOLETÍ</h1>
-                <h2 class="subtitle-article">Obsah bude doplněn.</h2>
-            </header>
-            <div class="article-body">
-                <p>Obsah sekce 21. století bude doplněn.</p>
-            </div>
+
+        <!-- PODSEKCE: 21. STOLETÍ -->
+        <div id="modernhistory-21stcentury-section" class="hidden">
+            <section id="21stcentury-section" class="pb-20 pt-10">
+                <div class="max-w-4xl mx-auto mb-10 text-center px-4">
+                    <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
+                </div>
+                <div class="newspaper-container" data-color="--color-21stcentury" data-rgb="30, 64, 175" id="clanek-21st-century">
+                    <header>
+                        <h1 class="main-article-title main-article-title-dynamic">21. STOLETÍ</h1>
+                        <h2 class="subtitle-article">Obsah bude doplněn.</h2>
+                    </header>
+                    <div class="article-body">
+                        <p>Obsah sekce 21. století bude doplněn.</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
 
