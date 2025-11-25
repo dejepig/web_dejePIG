@@ -44,6 +44,7 @@
     --color-egypt-virtual: #0d9488; /* teal-600 - Pro virtuální prohlídku hrobky */
     --color-egypt-unnamed-pyramid: #e11d48; /* rose-600 - Pro bezejmennou pyramidu */
     --color-egypt-sphinx: #7c3aed; /* violet-600 - Pro Sfingu */
+    --color-egypt-abu-simbel: #dc2626; /* red-600 - Pro Abu Simbel */
 
     /* Barva pro Řím */
     --color-rome-tile: #dc2626; /* red-600 */
@@ -64,6 +65,7 @@
 .border-t-egypt-virtual { border-top-color: var(--color-egypt-virtual); }
 .border-t-egypt-unnamed-pyramid { border-top-color: var(--color-egypt-unnamed-pyramid); }
 .border-t-egypt-sphinx { border-top-color: var(--color-egypt-sphinx); }
+.border-t-egypt-abu-simbel { border-top-color: var(--color-egypt-abu-simbel); }
 
 .youtube-play-button {
     display: inline-flex;
