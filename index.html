@@ -1917,26 +1917,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- PODSEKCE: 21. STOLETÍ -->
         <div id="modernhistory-21stcentury-section" class="hidden">
-            <section id="21stcentury-section" class="pb-20 pt-10">
-                <div id="21stcentury-tiles-view">
-                    <div class="max-w-4xl mx-auto mb-10 text-center px-4">
-                        <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
-                    </div>
-                    <div class="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-center px-4 sm:px-6 lg:px-8">
-                        <!-- Dlaždice: 9/11 -->
-                        <section class="w-full p-8 md:p-12 bg-white rounded-2xl shadow-xl border-t-8 border-[var(--color-911)] transform transition duration-500 hover:shadow-2xl hover:scale-[1.03]">
-                            <a href="#modernhistory/21stcentury/911" onclick="showSubSubsection('modernhistory', '21stcentury', '911')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-911)]/50 flex items-center justify-center">
-                                <p class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--color-911)] bulvar-title uppercase leading-tight">9/11</p>
-                            </a>
-                        </section>
-                        <!-- Dlaždice: Jsme ve čtvrtině -->
-                        <section class="w-full p-8 md:p-12 bg-white rounded-2xl shadow-xl border-t-8 border-[var(--color-quarter)] transform transition duration-500 hover:shadow-2xl hover:scale-[1.03]">
-                            <a href="#modernhistory/21stcentury/quarter" onclick="showSubSubsection('modernhistory', '21stcentury', 'quarter')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-quarter)]/50 flex items-center justify-center">
-                                <p class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--color-quarter)] bulvar-title uppercase leading-tight">Jsme ve čtvrtině</p>
-                            </a>
-                        </section>
-                    </div>
+            <!-- ZOBRAZENÍ DLAŽDIC PRO 21. STOLETÍ -->
+            <div id="modernhistory-21stcentury-tiles-view">
+                <div class="max-w-4xl mx-auto mb-10 text-center px-4">
+                    <a href="#modernhistory" onclick="showSection('modernhistory')" class="cursor-pointer">
+                        <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-modern-history)] bulvar-title uppercase leading-tight mb-2">MODERNÍ DĚJINY</p>
+                    </a>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-[var(--color-21stcentury)] bulvar-title uppercase leading-tight">21. století</p>
                 </div>
+                <div class="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-center px-4 sm:px-6 lg:px-8">
+                    <!-- Dlaždice: 9/11 -->
+                    <section class="w-full p-8 md:p-12 bg-white rounded-2xl shadow-xl border-t-8 border-[var(--color-911)] transform transition duration-500 hover:shadow-2xl hover:scale-[1.03]">
+                        <a href="#modernhistory/21stcentury/911" onclick="showSubSubsection('modernhistory', '21stcentury', '911')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-911)]/50 flex items-center justify-center">
+                            <p class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--color-911)] bulvar-title uppercase leading-tight">9/11</p>
+                        </a>
+                    </section>
+                    <!-- Dlaždice: Jsme ve čtvrtině -->
+                    <section class="w-full p-8 md:p-12 bg-white rounded-2xl shadow-xl border-t-8 border-[var(--color-quarter)] transform transition duration-500 hover:shadow-2xl hover:scale-[1.03]">
+                        <a href="#modernhistory/21stcentury/quarter" onclick="showSubSubsection('modernhistory', '21stcentury', 'quarter')" class="block w-full h-full group focus:outline-none focus:ring-4 focus:ring-[var(--color-quarter)]/50 flex items-center justify-center">
+                            <p class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--color-quarter)] bulvar-title uppercase leading-tight">Jsme ve čtvrtině</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
 
                 <!-- PODSEKCE: 9/11 -->
                 <div id="modernhistory-21stcentury-911-section" class="hidden pb-20 pt-10">
