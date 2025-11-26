@@ -149,6 +149,7 @@ const AVAILABLE_SECTIONS = ['home', 'prehistory', 'antiquity', 'medieval', 'earl
 const BREADCRUMB_NAMES = {
     'home': 'Domů', 'prehistory': 'Pravěk', 'antiquity': 'Starověk', 'medieval': 'Středověk', 'earlymodern': 'Novověk', 'modernhistory': 'Moderní dějiny',
     '19thcentury': '19. století', 'modern': '20. století', '21stcentury': '21. století',
+    '911': '9/11', 'quarter': 'Jsme ve čtvrtině',
     'mesopotamia': 'Mezopotámie', 'egypt': 'Egypt', 'rim': 'Řím', 'greece': 'Řecko', 'renaissance': 'Renesance', 'boulevard': 'Bulvár', 'habsburg': 'Nástup Habsburků', 'newworld': 'Nový svět',
     'sumerove': 'Sumerové', 'babylon': 'Babylon', 'punskevalky': 'Punské války', 'kartago': 'Kartágo'
 };
