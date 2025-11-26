@@ -507,6 +507,15 @@ function togglePasswordVisibility(inputId, checkboxId) {
     }
 }
 
+// Funkce pro přehrání zvuku při úspěšném zadání hesla
+function playSuccessSound() {
+    const audio = new Audio('https://dejepig.wz.cz/sounds/YES.mp3');
+    audio.play().catch(error => {
+        // Pokud se zvuk nepodaří přehrát (např. kvůli autoplay policy), ignorujeme chybu
+        console.log('Zvuk se nepodařilo přehrát:', error);
+    });
+}
+
 // Funkce pro normalizaci textu - odstranění diakritiky a převedení na malá písmena
 function normalizeText(text) {
     return text
@@ -552,6 +561,9 @@ function checkPassword(inputId) {
     const normalizedCorrectPassword = normalizeText(correctPassword);
     
     if (normalizedPassword === normalizedCorrectPassword) {
+        // Přehrát zvuk při úspěšném zadání hesla
+        playSuccessSound();
+        
         // Správné heslo - zavřít modální okno s heslem a zobrazit zprávu o úspěchu
         if (passwordModalId) {
             closeModal(passwordModalId);
