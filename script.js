@@ -543,6 +543,8 @@ function checkPassword(inputId) {
         correctPassword = '812iiíl1';
     } else if (inputId === 'pyramid-password-input') {
         correctPassword = 'ds234';
+    } else if (inputId === 'egypt-password-input') {
+        correctPassword = '12smrkaccm';
     } else {
         correctPassword = '0303'; // Výchozí heslo pro ostatní sekce
     }
@@ -582,6 +584,8 @@ function checkPassword(inputId) {
             openModal('mesopotamia-success-modal');
         } else if (inputId === 'pyramid-password-input') {
             openModal('pyramid-success-modal');
+        } else if (inputId === 'egypt-password-input') {
+            openModal('egypt-success-modal');
         } else {
             openModal('password-success-modal');
         }
