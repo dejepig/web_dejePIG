@@ -516,6 +516,15 @@ function playSuccessSound() {
     });
 }
 
+// Funkce pro přehrání zvuku při špatném zadání hesla
+function playErrorSound() {
+    const audio = new Audio('https://dejepig.wz.cz/sounds/NO.mp3');
+    audio.play().catch(error => {
+        // Pokud se zvuk nepodaří přehrát (např. kvůli autoplay policy), ignorujeme chybu
+        console.log('Zvuk se nepodařilo přehrát:', error);
+    });
+}
+
 // Funkce pro normalizaci textu - odstranění diakritiky a převedení na malá písmena
 function normalizeText(text) {
     return text
@@ -579,6 +588,8 @@ function checkPassword(inputId) {
         input.value = ''; // Vymazat pole
     } else {
         // Špatné heslo
+        // Přehrát zvuk při špatném zadání hesla
+        playErrorSound();
         openModal('password-error-modal');
         input.value = ''; // Vymazat pole
     }
