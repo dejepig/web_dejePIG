@@ -2202,6 +2202,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
+    <!-- MODAL: ROZPAD ŘÍŠE - ÚSPĚCH -->
+    <div id="pad-rima-success-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'pad-rima-success-modal') closeModal('pad-rima-success-modal')">
+        <div class="modal-content mesopotamia-success-content" onclick="event.stopPropagation()">
+            <h2 class="text-4xl font-bold font-[var(--font-display)] mb-6 text-center"><strong>GRATULUJI!</strong></h2>
+            <div class="text-lg font-[var(--font-body)] mb-6 space-y-4">
+                <div class="flex justify-center my-4">
+                    <img src="https://dejepig.wz.cz/images/Fesak.jpg" alt="Fešák" class="max-w-[300px] w-full h-auto rounded-lg">
+                </div>
+                <p class="text-center">Běž panu učiteli ukázat tohoto fešáka, aby viděl, že máš vše hotové.</p>
+            </div>
+            <div class="flex justify-center">
+                <button type="button" onclick="closeModal('pad-rima-success-modal')" class="px-6 py-2 bg-gray-800 text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:bg-gray-700 transition duration-200">Zavřít</button>
+            </div>
+        </div>
+    </div>
+
     <!-- MODAL PRO CHYBNÉ HESLO -->
     <div id="password-error-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'password-error-modal') closeModal('password-error-modal')">
         <div class="modal-content" onclick="event.stopPropagation()">

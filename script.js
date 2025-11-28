@@ -616,6 +616,8 @@ function checkPassword(inputId) {
             openModal('pyramid-success-modal');
         } else if (inputId === 'egypt-password-input') {
             openModal('egypt-success-modal');
+        } else if (inputId === 'pad-rima-password-input') {
+            openModal('pad-rima-success-modal');
         } else {
             openModal('password-success-modal');
         }
