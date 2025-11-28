@@ -616,10 +616,6 @@ function checkPassword(inputId) {
             openModal('pyramid-success-modal');
         } else if (inputId === 'egypt-password-input') {
             openModal('egypt-success-modal');
-        } else if (inputId === 'pad-rima-password-input') {
-            // Zobrazit sekci Pád Říma
-            showContent('antiquity', 'pad-rima', null, true);
-            openModal('password-success-modal');
         } else {
             openModal('password-success-modal');
         }
