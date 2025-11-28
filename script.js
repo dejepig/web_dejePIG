@@ -573,7 +573,7 @@ function checkPassword(inputId) {
     } else if (inputId === 'egypt-password-input') {
         correctPassword = '12smrkaccm';
     } else if (inputId === 'pad-rima-password-input') {
-        correctPassword = '476brnoxmk';
+        correctPassword = '476brooxmk';
     } else {
         correctPassword = '0303'; // Výchozí heslo pro ostatní sekce
     }

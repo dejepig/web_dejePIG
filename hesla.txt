@@ -17,7 +17,7 @@ STAROVĚK:
    Heslo: 0303
 
 6. pad-rima-password-modal (Rozpad říše)
-   Heslo: 476brnoxmk
+   Heslo: 476brooxmk
 
 STŘEDOVĚK:
 7. first-premyslids-password-modal (První Přemyslovci)
@@ -50,5 +50,5 @@ POZNÁMKA: Výchozí heslo pro většinu sekcí je "0303". Speciální hesla maj
 - Mezopotámie: 812iiíl1
 - První pyramida: ds234
 - Tajuplný Egypt: 12smrkaccm
-- Rozpad říše: 476brnoxmk
+- Rozpad říše: 476brooxmk
 
