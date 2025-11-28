@@ -572,7 +572,7 @@ function checkPassword(inputId) {
         correctPassword = 'ds234';
     } else if (inputId === 'egypt-password-input') {
         correctPassword = '12smrkaccm';
-    } else if (inputId === 'pad-rima-password-input') {
+    } else if (inputId === 'rozpad-rise-password-input') {
         correctPassword = '476brooxmk';
     } else {
         correctPassword = '0303'; // Výchozí heslo pro ostatní sekce
@@ -585,7 +585,7 @@ function checkPassword(inputId) {
         'pyramid-password-input': 'pyramid-password-modal',
         'egypt-password-input': 'egypt-password-modal',
         'greece-password-input': 'greece-password-modal',
-        'pad-rima-password-input': 'pad-rima-password-modal',
+        'rozpad-rise-password-input': 'rozpad-rise-password-modal',
         'first-premyslids-password-input': 'first-premyslids-password-modal',
         'first-czech-kings-password-input': 'first-czech-kings-password-modal',
         'last-premyslids-1-password-input': 'last-premyslids-1-password-modal',
@@ -616,8 +616,8 @@ function checkPassword(inputId) {
             openModal('pyramid-success-modal');
         } else if (inputId === 'egypt-password-input') {
             openModal('egypt-success-modal');
-        } else if (inputId === 'pad-rima-password-input') {
-            openModal('pad-rima-success-modal');
+        } else if (inputId === 'rozpad-rise-password-input') {
+            openModal('rozpad-rise-success-modal');
         } else {
             openModal('password-success-modal');
         }

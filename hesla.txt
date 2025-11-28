@@ -16,7 +16,7 @@ STAROVĚK:
 5. greece-password-modal (Zázraky starověkého Řecka)
    Heslo: 0303
 
-6. pad-rima-password-modal (Rozpad říše)
+6. rozpad-rise-password-modal (Rozpad říše)
    Heslo: 476brooxmk
 
 STŘEDOVĚK:

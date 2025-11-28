@@ -83,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <a href="javascript:void(0)" onclick="openModal('pyramid-password-modal'); closeLockMenu();" class="lock-dropdown-item">První pyramida</a>
                                     <a href="javascript:void(0)" onclick="openModal('egypt-password-modal'); closeLockMenu();" class="lock-dropdown-item">Tajuplný Egypt</a>
                                     <a href="javascript:void(0)" onclick="openModal('greece-password-modal'); closeLockMenu();" class="lock-dropdown-item">Zázraky starověkého Řecka</a>
-                                    <a href="javascript:void(0)" onclick="openModal('pad-rima-password-modal'); closeLockMenu();" class="lock-dropdown-item">Rozpad říše</a>
+                                    <a href="javascript:void(0)" onclick="openModal('rozpad-rise-password-modal'); closeLockMenu();" class="lock-dropdown-item">Rozpad říše</a>
                                 </div>
                             </div>
                             <div class="lock-dropdown-item-with-submenu">
@@ -704,7 +704,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </button>
                             <!-- Rozbalovací menu pro Rozpad říše -->
                             <div id="rozpad-rise-lock-dropdown-menu" class="lock-dropdown-menu hidden">
-                                <a href="javascript:void(0)" onclick="openModal('pad-rima-password-modal'); closeRozpadRiseLockMenu();" class="lock-dropdown-item">Rozpad říše</a>
+                                <a href="javascript:void(0)" onclick="openModal('rozpad-rise-password-modal'); closeRozpadRiseLockMenu();" class="lock-dropdown-item">Rozpad říše</a>
                             </div>
                         </div>
                     </div>
@@ -781,7 +781,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div> <!-- Konec wrapperu Řecko -->
 
         <!-- Wrapper pro Rozpad říše -->
-        <div id="antiquity-pad-rima-section" class="hidden"> 
+        <div id="antiquity-rozpad-rise-section" class="hidden"> 
              <div class="max-w-4xl mx-auto mb-10 text-center px-4">
                 <a href="#antiquity" onclick="showSection('antiquity')" class="cursor-pointer">
                     <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight mb-2">STAROVĚK</p>
@@ -1025,7 +1025,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- MODAL: ROZPAD ŘÍŠE - HESLO -->
-    <div id="pad-rima-password-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'pad-rima-password-modal') closeModal('pad-rima-password-modal')">
+    <div id="rozpad-rise-password-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'rozpad-rise-password-modal') closeModal('rozpad-rise-password-modal')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="text-center">
                 <!-- Nadpis -->
@@ -1041,16 +1041,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 <!-- Pole pro heslo -->
                 <div class="mb-6">
-                    <label for="pad-rima-password-input" class="block text-lg font-bold font-[var(--font-title-secondary)] text-gray-800 mb-3">Heslo</label>
+                    <label for="rozpad-rise-password-input" class="block text-lg font-bold font-[var(--font-title-secondary)] text-gray-800 mb-3">Heslo</label>
                     <input 
                         type="password" 
-                        id="pad-rima-password-input" 
+                        id="rozpad-rise-password-input" 
                         class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-700 text-lg font-[var(--font-body)]"
                         placeholder="Zadejte heslo"
-                        onkeypress="if(event.key === 'Enter') checkPassword('pad-rima-password-input')">
+                        onkeypress="if(event.key === 'Enter') checkPassword('rozpad-rise-password-input')">
                     <div class="mt-2">
                         <label class="flex items-center text-sm text-gray-600 cursor-pointer">
-                            <input type="checkbox" id="pad-rima-show-password" class="mr-2" onchange="togglePasswordVisibility('pad-rima-password-input', 'pad-rima-show-password')">
+                            <input type="checkbox" id="rozpad-rise-show-password" class="mr-2" onchange="togglePasswordVisibility('rozpad-rise-password-input', 'rozpad-rise-show-password')">
                             Zobrazit heslo
                         </label>
                     </div>
@@ -1060,7 +1060,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- Tlačítko pro odeslání -->
                 <div class="flex justify-center">
                     <button 
-                        onclick="checkPassword('pad-rima-password-input')" 
+                        onclick="checkPassword('rozpad-rise-password-input')" 
                         class="px-8 py-3 bg-[var(--color-rome-tile)] text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:opacity-90 transition duration-200">
                         Odeslat
                     </button>
@@ -2203,7 +2203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- MODAL: ROZPAD ŘÍŠE - ÚSPĚCH -->
-    <div id="pad-rima-success-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'pad-rima-success-modal') closeModal('pad-rima-success-modal')">
+    <div id="rozpad-rise-success-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'rozpad-rise-success-modal') closeModal('rozpad-rise-success-modal')">
         <div class="modal-content mesopotamia-success-content" onclick="event.stopPropagation()">
             <h2 class="text-4xl font-bold font-[var(--font-display)] mb-6 text-center"><strong>GRATULUJI!</strong></h2>
             <div class="text-lg font-[var(--font-body)] mb-6 space-y-4">
@@ -2213,7 +2213,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="text-center">Běž panu učiteli ukázat tohoto fešáka, aby viděl, že máš vše hotové.</p>
             </div>
             <div class="flex justify-center">
-                <button type="button" onclick="closeModal('pad-rima-success-modal')" class="px-6 py-2 bg-gray-800 text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:bg-gray-700 transition duration-200">Zavřít</button>
+                <button type="button" onclick="closeModal('rozpad-rise-success-modal')" class="px-6 py-2 bg-gray-800 text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:bg-gray-700 transition duration-200">Zavřít</button>
             </div>
         </div>
     </div>
