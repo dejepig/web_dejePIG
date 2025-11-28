@@ -83,7 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <a href="javascript:void(0)" onclick="openModal('pyramid-password-modal'); closeLockMenu();" class="lock-dropdown-item">První pyramida</a>
                                     <a href="javascript:void(0)" onclick="openModal('egypt-password-modal'); closeLockMenu();" class="lock-dropdown-item">Tajuplný Egypt</a>
                                     <a href="javascript:void(0)" onclick="openModal('greece-password-modal'); closeLockMenu();" class="lock-dropdown-item">Zázraky starověkého Řecka</a>
-                                    <a href="javascript:void(0)" onclick="openModal('pad-rima-password-modal'); closeLockMenu();" class="lock-dropdown-item">Pád Říma</a>
+                                    <a href="javascript:void(0)" onclick="openModal('pad-rima-password-modal'); closeLockMenu();" class="lock-dropdown-item">Rozpad říše</a>
                                 </div>
                             </div>
                             <div class="lock-dropdown-item-with-submenu">
@@ -691,7 +691,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p class="text-2xl sm:text-3xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight">Řím</p>
                         </a>
                         <span class="text-2xl sm:text-3xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight">-</span> 
-                        <p class="text-2xl sm:text-3xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight">Rozpad říše</p> 
+                        <p class="text-2xl sm:text-3xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight">Rozpad říše</p>
+                        <!-- Malá ikona zámečku -->
+                        <button id="rozpad-rise-lock-button" onclick="toggleRozpadRiseLockMenu(event)" 
+                            class="ml-2 p-1 rounded hover:bg-gray-100 transition duration-200 inline-flex items-center justify-center flex-shrink-0 hover:scale-110 hover:drop-shadow-lg"
+                            aria-label="Otevřít menu zámků">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[var(--color-antiquity)]">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </button>
+                        <!-- Rozbalovací menu pro Rozpad říše -->
+                        <div id="rozpad-rise-lock-dropdown-menu" class="lock-dropdown-menu hidden">
+                            <a href="javascript:void(0)" onclick="openModal('pad-rima-password-modal'); closeRozpadRiseLockMenu();" class="lock-dropdown-item">Rozpad říše</a>
+                        </div>
                     </div>
                 </div>
                 <div class="max-w-4xl mx-auto grid grid-cols-1 gap-8 py-8 px-4 items-start">
@@ -765,22 +777,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div> <!-- Konec wrapperu Řecko -->
 
-        <!-- Wrapper pro Pád Říma -->
+        <!-- Wrapper pro Rozpad říše -->
         <div id="antiquity-pad-rima-section" class="hidden"> 
              <div class="max-w-4xl mx-auto mb-10 text-center px-4">
                 <a href="#antiquity" onclick="showSection('antiquity')" class="cursor-pointer">
                     <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight mb-2">STAROVĚK</p>
                 </a>
-                <p class="text-2xl sm:text-3xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight">Pád Říma</p>
+                <p class="text-2xl sm:text-3xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight">Rozpad říše</p>
             </div>
             
             <div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-xl border-t-8 border-[var(--color-rome-tile)] text-center">
                  <h2 class="text-2xl font-bold font-[var(--font-title-secondary)] mb-6 text-gray-800">
-                    Pád Říma - Obsah bude brzy doplněn
+                    Rozpad říše - Obsah bude brzy doplněn
                 </h2>
-                <p>Zde bude obsah o pádu Říma.</p>
+                <p>Zde bude obsah o rozpadu říše.</p>
             </div>
-        </div> <!-- Konec wrapperu Pád Říma -->
+        </div> <!-- Konec wrapperu Rozpad říše -->
 
     </section>
 
@@ -1009,12 +1021,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 
-    <!-- MODAL: PÁD ŘÍMA - HESLO -->
+    <!-- MODAL: ROZPAD ŘÍŠE - HESLO -->
     <div id="pad-rima-password-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'pad-rima-password-modal') closeModal('pad-rima-password-modal')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="text-center">
                 <!-- Nadpis -->
-                <h2 class="text-2xl font-bold font-[var(--font-title-secondary)] text-[var(--color-antiquity)] mb-4">Pád Říma</h2>
+                <h2 class="text-2xl font-bold font-[var(--font-title-secondary)] text-[var(--color-antiquity)] mb-4">Rozpad říše</h2>
                 
                 <!-- Velká ikona zámku -->
                 <div class="mb-8 flex justify-center">

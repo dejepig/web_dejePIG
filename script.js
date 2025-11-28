@@ -371,6 +371,33 @@ function closeEgyptLockMenu() {
     if (button) button.setAttribute('aria-expanded', 'false');
 }
 
+function toggleRozpadRiseLockMenu(event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    const menu = document.getElementById('rozpad-rise-lock-dropdown-menu');
+    const button = document.getElementById('rozpad-rise-lock-button');
+    if (!menu || !button) return;
+    
+    const isHidden = menu.classList.contains('hidden');
+    
+    if (isHidden) {
+        menu.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+    } else {
+        menu.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+    }
+}
+
+function closeRozpadRiseLockMenu() {
+    const menu = document.getElementById('rozpad-rise-lock-dropdown-menu');
+    const button = document.getElementById('rozpad-rise-lock-button');
+    if (menu) menu.classList.add('hidden');
+    if (button) button.setAttribute('aria-expanded', 'false');
+}
+
 function togglePrincipalityLockMenu(event) {
     if (event) {
         event.preventDefault();
@@ -941,6 +968,13 @@ window.onload = () => {
         const egyptLockMenu = document.getElementById('egypt-lock-dropdown-menu');
         if (egyptLockMenu && egyptLockButton && !egyptLockButton.contains(event.target) && !egyptLockMenu.contains(event.target)) {
             closeEgyptLockMenu();
+        }
+        
+        // Zavření Rozpad říše lock menu při kliknutí mimo něj
+        const rozpadRiseLockButton = document.getElementById('rozpad-rise-lock-button');
+        const rozpadRiseLockMenu = document.getElementById('rozpad-rise-lock-dropdown-menu');
+        if (rozpadRiseLockMenu && rozpadRiseLockButton && !rozpadRiseLockButton.contains(event.target) && !rozpadRiseLockMenu.contains(event.target)) {
+            closeRozpadRiseLockMenu();
         }
         
         // Zavření Principality lock menu při kliknutí mimo něj
