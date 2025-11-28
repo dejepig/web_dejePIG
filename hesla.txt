@@ -16,30 +16,33 @@ STAROVĚK:
 5. greece-password-modal (Zázraky starověkého Řecka)
    Heslo: 0303
 
+6. pad-rima-password-modal (Rozpad říše)
+   Heslo: 476brnoxmk
+
 STŘEDOVĚK:
-6. first-premyslids-password-modal (První Přemyslovci)
+7. first-premyslids-password-modal (První Přemyslovci)
    Heslo: 0303
 
-7. first-czech-kings-password-modal (První čeští králové)
+8. first-czech-kings-password-modal (První čeští králové)
    Heslo: 0303
 
-8. last-premyslids-1-password-modal (Poslední Přemyslovci I.)
+9. last-premyslids-1-password-modal (Poslední Přemyslovci I.)
    Heslo: 0303
 
-9. husite-wars-password-modal (Příběhy z husitských válek)
-   Heslo: 0303
+10. husite-wars-password-modal (Příběhy z husitských válek)
+    Heslo: 0303
 
 NOVOVĚK:
-10. jan-palach-password-modal (Jan Palach)
+11. jan-palach-password-modal (Jan Palach)
     Heslo: 0303
 
-11. 1968-password-modal (1968)
+12. 1968-password-modal (1968)
     Heslo: 0303
 
-12. velvet-revolution-personality-password-modal (Osobnost sametové revoluce)
+13. velvet-revolution-personality-password-modal (Osobnost sametové revoluce)
     Heslo: 0303
 
-13. quarter-21st-century-password-modal (Čtvrtina 21. století)
+14. quarter-21st-century-password-modal (Čtvrtina 21. století)
     Heslo: 0303
 
 ---
@@ -47,4 +50,5 @@ POZNÁMKA: Výchozí heslo pro většinu sekcí je "0303". Speciální hesla maj
 - Mezopotámie: 812iiíl1
 - První pyramida: ds234
 - Tajuplný Egypt: 12smrkaccm
+- Rozpad říše: 476brnoxmk
 
