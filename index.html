@@ -83,6 +83,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <a href="javascript:void(0)" onclick="openModal('pyramid-password-modal'); closeLockMenu();" class="lock-dropdown-item">První pyramida</a>
                                     <a href="javascript:void(0)" onclick="openModal('egypt-password-modal'); closeLockMenu();" class="lock-dropdown-item">Tajuplný Egypt</a>
                                     <a href="javascript:void(0)" onclick="openModal('greece-password-modal'); closeLockMenu();" class="lock-dropdown-item">Zázraky starověkého Řecka</a>
+                                    <a href="javascript:void(0)" onclick="openModal('pad-rima-password-modal'); closeLockMenu();" class="lock-dropdown-item">Pád Říma</a>
                                 </div>
                             </div>
                             <div class="lock-dropdown-item-with-submenu">
@@ -764,6 +765,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div> <!-- Konec wrapperu Řecko -->
 
+        <!-- Wrapper pro Pád Říma -->
+        <div id="antiquity-pad-rima-section" class="hidden"> 
+             <div class="max-w-4xl mx-auto mb-10 text-center px-4">
+                <a href="#antiquity" onclick="showSection('antiquity')" class="cursor-pointer">
+                    <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight mb-2">STAROVĚK</p>
+                </a>
+                <p class="text-2xl sm:text-3xl font-extrabold text-[var(--color-antiquity)] bulvar-title uppercase leading-tight">Pád Říma</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-xl border-t-8 border-[var(--color-rome-tile)] text-center">
+                 <h2 class="text-2xl font-bold font-[var(--font-title-secondary)] mb-6 text-gray-800">
+                    Pád Říma - Obsah bude brzy doplněn
+                </h2>
+                <p>Zde bude obsah o pádu Říma.</p>
+            </div>
+        </div> <!-- Konec wrapperu Pád Říma -->
+
     </section>
 
     <!-- MODAL: MEZOPOTÁMIE - HESLO -->
@@ -984,6 +1002,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <button 
                         onclick="checkPassword('greece-password-input')" 
                         class="px-8 py-3 bg-[var(--color-greece-tile)] text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:opacity-90 transition duration-200">
+                        Odeslat
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: PÁD ŘÍMA - HESLO -->
+    <div id="pad-rima-password-modal" class="modal-overlay modal-hidden" onclick="if(event.target.id === 'pad-rima-password-modal') closeModal('pad-rima-password-modal')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="text-center">
+                <!-- Nadpis -->
+                <h2 class="text-2xl font-bold font-[var(--font-title-secondary)] text-[var(--color-antiquity)] mb-4">Pád Říma</h2>
+                
+                <!-- Velká ikona zámku -->
+                <div class="mb-8 flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700">
+                        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    </svg>
+                </div>
+                
+                <!-- Pole pro heslo -->
+                <div class="mb-6">
+                    <label for="pad-rima-password-input" class="block text-lg font-bold font-[var(--font-title-secondary)] text-gray-800 mb-3">Heslo</label>
+                    <input 
+                        type="password" 
+                        id="pad-rima-password-input" 
+                        class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-gray-700 text-lg font-[var(--font-body)]"
+                        placeholder="Zadejte heslo"
+                        onkeypress="if(event.key === 'Enter') checkPassword('pad-rima-password-input')">
+                    <div class="mt-2">
+                        <label class="flex items-center text-sm text-gray-600 cursor-pointer">
+                            <input type="checkbox" id="pad-rima-show-password" class="mr-2" onchange="togglePasswordVisibility('pad-rima-password-input', 'pad-rima-show-password')">
+                            Zobrazit heslo
+                        </label>
+                    </div>
+                    <p class="mt-2 text-xs text-gray-500 text-center">Poznámka: Nezáleží na diakritice ani velikosti písmen.</p>
+                </div>
+                
+                <!-- Tlačítko pro odeslání -->
+                <div class="flex justify-center">
+                    <button 
+                        onclick="checkPassword('pad-rima-password-input')" 
+                        class="px-8 py-3 bg-[var(--color-rome-tile)] text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:opacity-90 transition duration-200">
                         Odeslat
                     </button>
                 </div>

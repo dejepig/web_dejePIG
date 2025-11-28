@@ -545,6 +545,8 @@ function checkPassword(inputId) {
         correctPassword = 'ds234';
     } else if (inputId === 'egypt-password-input') {
         correctPassword = '12smrkaccm';
+    } else if (inputId === 'pad-rima-password-input') {
+        correctPassword = '476brnoxmk';
     } else {
         correctPassword = '0303'; // Výchozí heslo pro ostatní sekce
     }
@@ -556,6 +558,7 @@ function checkPassword(inputId) {
         'pyramid-password-input': 'pyramid-password-modal',
         'egypt-password-input': 'egypt-password-modal',
         'greece-password-input': 'greece-password-modal',
+        'pad-rima-password-input': 'pad-rima-password-modal',
         'first-premyslids-password-input': 'first-premyslids-password-modal',
         'first-czech-kings-password-input': 'first-czech-kings-password-modal',
         'last-premyslids-1-password-input': 'last-premyslids-1-password-modal',
@@ -586,6 +589,10 @@ function checkPassword(inputId) {
             openModal('pyramid-success-modal');
         } else if (inputId === 'egypt-password-input') {
             openModal('egypt-success-modal');
+        } else if (inputId === 'pad-rima-password-input') {
+            // Zobrazit sekci Pád Říma
+            showContent('antiquity', 'pad-rima', null, true);
+            openModal('password-success-modal');
         } else {
             openModal('password-success-modal');
         }
