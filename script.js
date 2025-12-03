@@ -694,7 +694,14 @@ function openImageZoom(element) {
     resetImageZoom();
     
     // Přidat event listenery pro posouvání obrázku
-    setupImageDrag(image);
+    // Pokud je obrázek už načtený, nastavit hned, jinak počkat na načtení
+    if (image.complete) {
+        setupImageDrag(image);
+    } else {
+        image.onload = function() {
+            setupImageDrag(image);
+        };
+    }
 
     // NOVÁ LOGIKA pro zdrojový odkaz - plynulé zobrazení z ikonky
     if (sourceData && sourceData !== "null") {
@@ -894,7 +901,14 @@ function navigateGallery(direction) {
     resetImageZoom();
     
     // Přidat event listenery pro posouvání obrázku
-    setupImageDrag(imageElement);
+    // Pokud je obrázek už načtený, nastavit hned, jinak počkat na načtení
+    if (imageElement.complete) {
+        setupImageDrag(imageElement);
+    } else {
+        imageElement.onload = function() {
+            setupImageDrag(imageElement);
+        };
+    }
 
     // UPRAVENÁ LOGIKA - plynulé zobrazení z ikonky
     if (newImage.source && newImage.source !== "null") {
