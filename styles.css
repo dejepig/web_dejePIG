@@ -645,17 +645,17 @@ nav { transition: transform 0.3s ease-in-out; }
 }
 
 #zoom-in-btn {
-    top: 1rem;
+    bottom: 4rem;
     right: 1rem;
 }
 
 #zoom-out-btn {
-    top: 4rem;
+    bottom: 7rem;
     right: 1rem;
 }
 
 #zoom-reset-btn {
-    top: 7rem;
+    bottom: 10rem;
     right: 1rem;
 }
 
