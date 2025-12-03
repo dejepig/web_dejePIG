@@ -692,6 +692,9 @@ function openImageZoom(element) {
     
     // Resetovat zoom při otevření nového obrázku
     resetImageZoom();
+    
+    // Přidat event listenery pro posouvání obrázku
+    setupImageDrag(image);
 
     // NOVÁ LOGIKA pro zdrojový odkaz - plynulé zobrazení z ikonky
     if (sourceData && sourceData !== "null") {
@@ -753,6 +756,12 @@ function closeImageZoom(event) {
 
 // Proměnná pro aktuální úroveň zoomu
 let currentZoomLevel = 1;
+// Proměnné pro posouvání obrázku
+let isDragging = false;
+let startX = 0;
+let startY = 0;
+let currentX = 0;
+let currentY = 0;
 
 // Funkce pro zoom obrázku
 function zoomImage(factor) {
@@ -763,8 +772,16 @@ function zoomImage(factor) {
     // Omezit zoom mezi 0.5x a 5x
     currentZoomLevel = Math.max(0.5, Math.min(5, currentZoomLevel));
     
-    image.style.transform = `scale(${currentZoomLevel})`;
-    image.style.transition = 'transform 0.3s ease';
+    // Pokud zoom klesne na 1x nebo méně, resetovat pozici
+    if (currentZoomLevel <= 1) {
+        currentX = 0;
+        currentY = 0;
+    }
+    
+    updateImageTransform();
+    
+    // Aktualizovat kurzor
+    image.style.cursor = currentZoomLevel > 1 ? 'grab' : 'default';
 }
 
 // Funkce pro reset zoomu
@@ -773,8 +790,85 @@ function resetImageZoom() {
     if (!image) return;
     
     currentZoomLevel = 1;
-    image.style.transform = 'scale(1)';
-    image.style.transition = 'transform 0.3s ease';
+    currentX = 0;
+    currentY = 0;
+    updateImageTransform();
+}
+
+// Funkce pro aktualizaci transformace obrázku (zoom + posun)
+function updateImageTransform() {
+    const image = document.getElementById('zoomed-image');
+    if (!image) return;
+    
+    image.style.transform = `scale(${currentZoomLevel}) translate(${currentX}px, ${currentY}px)`;
+    image.style.transition = isDragging ? 'none' : 'transform 0.3s ease';
+}
+
+// Funkce pro zahájení tažení obrázku
+function startDrag(e) {
+    const image = document.getElementById('zoomed-image');
+    if (!image || currentZoomLevel <= 1) return; // Pouze při zoomu větším než 1x
+    
+    isDragging = true;
+    image.style.cursor = 'grabbing';
+    
+    // Získat pozici myši
+    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+    const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+    
+    startX = clientX - currentX;
+    startY = clientY - currentY;
+    
+    e.preventDefault();
+}
+
+// Funkce pro tažení obrázku
+function drag(e) {
+    if (!isDragging) return;
+    
+    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+    const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+    
+    currentX = clientX - startX;
+    currentY = clientY - startY;
+    
+    updateImageTransform();
+    e.preventDefault();
+}
+
+// Funkce pro ukončení tažení
+function stopDrag() {
+    if (!isDragging) return;
+    
+    isDragging = false;
+    const image = document.getElementById('zoomed-image');
+    if (image) {
+        image.style.cursor = currentZoomLevel > 1 ? 'grab' : 'default';
+    }
+}
+
+// Funkce pro nastavení drag & drop funkcionality
+function setupImageDrag(image) {
+    if (!image) return;
+    
+    // Odstranit staré event listenery, pokud existují
+    image.removeEventListener('mousedown', startDrag);
+    image.removeEventListener('touchstart', startDrag);
+    document.removeEventListener('mousemove', drag);
+    document.removeEventListener('touchmove', drag);
+    document.removeEventListener('mouseup', stopDrag);
+    document.removeEventListener('touchend', stopDrag);
+    
+    // Přidat nové event listenery
+    image.addEventListener('mousedown', startDrag);
+    image.addEventListener('touchstart', startDrag);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('touchmove', drag);
+    document.addEventListener('mouseup', stopDrag);
+    document.addEventListener('touchend', stopDrag);
+    
+    // Aktualizovat kurzor podle zoomu
+    image.style.cursor = currentZoomLevel > 1 ? 'grab' : 'default';
 }
 
 function navigateGallery(direction) {
@@ -798,6 +892,9 @@ function navigateGallery(direction) {
     
     // Resetovat zoom při přepnutí obrázku v galerii
     resetImageZoom();
+    
+    // Přidat event listenery pro posouvání obrázku
+    setupImageDrag(imageElement);
 
     // UPRAVENÁ LOGIKA - plynulé zobrazení z ikonky
     if (newImage.source && newImage.source !== "null") {
