@@ -689,6 +689,9 @@ function openImageZoom(element) {
 
     image.src = imageUrl;
     image.alt = altText;
+    
+    // Resetovat zoom při otevření nového obrázku
+    resetImageZoom();
 
     // NOVÁ LOGIKA pro zdrojový odkaz - plynulé zobrazení z ikonky
     if (sourceData && sourceData !== "null") {
@@ -733,6 +736,9 @@ function closeImageZoom(event) {
         // Nejdřív skryjeme rámeček s informací
         sourceWrapper.classList.add('hidden');
         
+        // Resetovat zoom při zavření
+        resetImageZoom();
+        
         modal.style.opacity = '0';
         setTimeout(() => {
             modal.classList.add('modal-hidden');
@@ -743,6 +749,32 @@ function closeImageZoom(event) {
             currentGalleryIndex = 0;
         }, 300);
     }
+}
+
+// Proměnná pro aktuální úroveň zoomu
+let currentZoomLevel = 1;
+
+// Funkce pro zoom obrázku
+function zoomImage(factor) {
+    const image = document.getElementById('zoomed-image');
+    if (!image) return;
+    
+    currentZoomLevel *= factor;
+    // Omezit zoom mezi 0.5x a 5x
+    currentZoomLevel = Math.max(0.5, Math.min(5, currentZoomLevel));
+    
+    image.style.transform = `scale(${currentZoomLevel})`;
+    image.style.transition = 'transform 0.3s ease';
+}
+
+// Funkce pro reset zoomu
+function resetImageZoom() {
+    const image = document.getElementById('zoomed-image');
+    if (!image) return;
+    
+    currentZoomLevel = 1;
+    image.style.transform = 'scale(1)';
+    image.style.transition = 'transform 0.3s ease';
 }
 
 function navigateGallery(direction) {
@@ -763,6 +795,9 @@ function navigateGallery(direction) {
 
     imageElement.src = newImage.src;
     imageElement.alt = newImage.alt;
+    
+    // Resetovat zoom při přepnutí obrázku v galerii
+    resetImageZoom();
 
     // UPRAVENÁ LOGIKA - plynulé zobrazení z ikonky
     if (newImage.source && newImage.source !== "null") {

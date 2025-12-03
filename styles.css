@@ -484,6 +484,12 @@ nav { transition: transform 0.3s ease-in-out; }
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform-origin: center center;
+    cursor: grab;
+}
+
+#zoomed-image:active {
+    cursor: grabbing;
 }
 
 /* Nový styl pro zdroj obrázku v modálním okně */
@@ -614,6 +620,49 @@ nav { transition: transform 0.3s ease-in-out; }
 @media (max-width: 640px) {
     #gallery-prev { left: 5px; }
     #gallery-next { right: 5px; }
+}
+
+/* Tlačítka pro Zoom obrázku */
+.zoom-control {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 120;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.zoom-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#zoom-in-btn {
+    top: 1rem;
+    right: 1rem;
+}
+
+#zoom-out-btn {
+    top: 4rem;
+    right: 1rem;
+}
+
+#zoom-reset-btn {
+    top: 7rem;
+    right: 1rem;
+}
+
+@media (max-width: 767px) {
+    .zoom-control {
+        display: none !important;
+    }
 }
 
 /* Styly pro Bulvár sekci - POUZE VNITŘNÍ PRVKY */
