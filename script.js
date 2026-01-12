@@ -143,7 +143,7 @@ let currentActiveSubSubsection = null;
 let currentGalleryImages = [];
 let currentGalleryIndex = 0;
 
-const AVAILABLE_SECTIONS = ['home', 'prehistory', 'antiquity', 'medieval', 'earlymodern', 'modernhistory'];
+const AVAILABLE_SECTIONS = ['home', 'prehistory', 'antiquity', 'medieval', 'earlymodern', 'modernhistory', 'matika'];
 
 // Slovník pro názvy (již není potřeba pro drobečky, ale může se hodit)
 const BREADCRUMB_NAMES = {
@@ -241,10 +241,15 @@ function showContent(sectionId, subsectionId = null, subsubsectionId = null, upd
     currentActiveSubSubsection = subsubsectionId;
     
     if (updateUrl) {
-        let hash = `#${sectionId}`;
-        if (subsectionId) hash += `/${subsectionId}`;
-        if (subsubsectionId) hash += `/${subsubsectionId}`;
-        history.pushState({ section: sectionId, subsection: subsectionId, subsubsection: subsubsectionId }, '', hash);
+        // Pro sekci 'matika' použít /matika místo #matika
+        if (sectionId === 'matika') {
+            history.pushState({ section: sectionId, subsection: subsectionId, subsubsection: subsubsectionId }, '', '/matika');
+        } else {
+            let hash = `#${sectionId}`;
+            if (subsectionId) hash += `/${subsectionId}`;
+            if (subsubsectionId) hash += `/${subsubsectionId}`;
+            history.pushState({ section: sectionId, subsection: subsectionId, subsubsection: subsubsectionId }, '', hash);
+        }
     }
 }
 
@@ -259,12 +264,26 @@ function showSubSubsection(sectionId, subsectionId, subsubsectionId) { showConte
 
 window.onpopstate = (event) => {
     const state = event.state || {};
+    
+    // Zkontrolovat, zda je URL /matika
+    if (window.location.pathname === '/matika' || window.location.pathname.endsWith('/matika')) {
+        showContent('matika', null, null, false);
+        return;
+    }
+    
     const hash = window.location.hash.substring(1);
     const parts = hash.split('/');
     showContent(state.section || parts[0] || 'home', state.subsection || parts[1] || null, state.subsubsection || parts[2] || null, false);
 };
 
 function initializePageState() {
+    // Zkontrolovat, zda je URL /matika
+    if (window.location.pathname === '/matika' || window.location.pathname.endsWith('/matika')) {
+        history.replaceState({ section: 'matika', subsection: null, subsubsection: null }, '', '/matika');
+        showContent('matika', null, null, false);
+        return;
+    }
+    
     const hash = window.location.hash.substring(1);
     const parts = hash.split('/');
     const initialSection = parts[0] || 'home';
@@ -634,6 +653,108 @@ function checkPassword(inputId) {
 // Zachování zpětné kompatibility
 function checkMesopotamiaPassword() {
     checkPassword('mesopotamia-password-input');
+}
+
+// Funkce pro kontrolu hesla v sekci Matematika
+// Mapa hesel pro jednotlivé úlohy (číslo úlohy: heslo)
+const matikaPasswords = {
+    // Příklad: '1': 'heslo1', '2': 'heslo2', atd.
+    // Hesla budou přidána podle potřeby
+};
+
+// Funkce pro kontrolu hesla a zobrazení souboru v sekci Matematika
+function checkMatikaPassword() {
+    const taskNumberInput = document.getElementById('matika-task-number');
+    const passwordInput = document.getElementById('matika-password-input');
+    const taskNumber = taskNumberInput.value.trim();
+    const password = passwordInput.value.trim();
+    
+    // Validace vstupů
+    if (!taskNumber || !password) {
+        playErrorSound();
+        alert('Prosím vyplňte číslo úlohy i heslo.');
+        return;
+    }
+    
+    // Získat správné heslo pro danou úlohu
+    const correctPassword = matikaPasswords[taskNumber];
+    
+    if (!correctPassword) {
+        playErrorSound();
+        alert('Úloha s číslem ' + taskNumber + ' neexistuje nebo nemá nastavené heslo.');
+        passwordInput.value = '';
+        return;
+    }
+    
+    // Porovnání normalizovaných verzí (bez diakritiky a case-insensitive)
+    const normalizedPassword = normalizeText(password);
+    const normalizedCorrectPassword = normalizeText(correctPassword);
+    
+    if (normalizedPassword === normalizedCorrectPassword) {
+        // Správné heslo - zobrazit soubor
+        playSuccessSound();
+        showMatikaFile(taskNumber);
+        passwordInput.value = '';
+        taskNumberInput.value = '';
+    } else {
+        // Špatné heslo
+        playErrorSound();
+        alert('Nesprávné heslo. Zkuste to znovu.');
+        passwordInput.value = '';
+    }
+}
+
+// Funkce pro zobrazení souboru úlohy
+function showMatikaFile(taskNumber) {
+    const fileContainer = document.getElementById('matika-file-container');
+    const fileTitle = document.getElementById('matika-file-title');
+    const currentTaskNumber = document.getElementById('matika-current-task-number');
+    const fileContent = document.getElementById('matika-file-content');
+    
+    // Aktualizovat nadpis
+    currentTaskNumber.textContent = taskNumber;
+    
+    // URL souboru - předpokládáme, že soubory jsou ve formátu /matika/1.pdf, /matika/2.pdf, atd.
+    const fileUrl = `https://dejepig.wz.cz/matika/${taskNumber}.pdf`;
+    
+    // Zobrazit soubor v iframe nebo jako odkaz
+    fileContent.innerHTML = `
+        <div class="w-full h-[600px] border-2 border-gray-300 rounded-lg overflow-hidden">
+            <iframe 
+                src="${fileUrl}" 
+                class="w-full h-full"
+                frameborder="0"
+                title="Úloha č. ${taskNumber}">
+                <p>Váš prohlížeč nepodporuje zobrazení PDF. <a href="${fileUrl}" target="_blank" rel="noopener noreferrer">Klikněte zde pro stažení souboru</a>.</p>
+            </iframe>
+        </div>
+        <div class="mt-4 text-center">
+            <a href="${fileUrl}" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:bg-blue-700 transition duration-200">
+                Otevřít v novém okně
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" x2="21" y1="14" y2="3"/>
+                </svg>
+            </a>
+        </div>
+    `;
+    
+    // Zobrazit kontejner
+    fileContainer.classList.remove('hidden');
+    
+    // Scrollovat k souboru
+    fileContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// Funkce pro zavření zobrazeného souboru
+function closeMatikaFile() {
+    const fileContainer = document.getElementById('matika-file-container');
+    const fileContent = document.getElementById('matika-file-content');
+    
+    fileContainer.classList.add('hidden');
+    fileContent.innerHTML = '';
 }
 
 function openImageZoom(element) {

@@ -112,6 +112,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
 
+                    <!-- Tlačítko MATEMATIKA (NOVÉ) -->
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/matika" onclick="event.preventDefault(); showSection('matika'); closeSidebar();" 
+                            class="nav-link tooltip-custom transition duration-200 p-2 rounded-lg hover:bg-gray-700 hover:text-white inline-flex items-center justify-center" 
+                            aria-label="Otevřít sekci Matematika"
+                            data-tooltip="Matematika">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator">
+                                <rect width="16" height="20" x="4" y="2" rx="2"/>
+                                <line x1="8" x2="16" y1="6" y2="6"/>
+                                <line x1="16" x2="16" y1="14" y2="18"/>
+                                <path d="M16 10h.01"/>
+                                <path d="M12 10h.01"/>
+                                <path d="M8 10h.01"/>
+                                <path d="M12 14h.01"/>
+                                <path d="M8 14h.01"/>
+                                <path d="M12 18h.01"/>
+                                <path d="M8 18h.01"/>
+                            </svg>
+                        </a>
+                    </div>
+
                 </div> <!-- Konec levého wrapperu -->
 
                 <!-- Logo vpravo -->
@@ -152,6 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="#medieval" onclick="showSection('medieval'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-medieval)] text-[var(--color-medieval)]">Středověk</a>
                 <a href="#earlymodern" onclick="showSection('earlymodern'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-early-modern)] text-[var(--color-early-modern)]">Novověk</a>
                 <a href="#modernhistory" onclick="showSection('modernhistory'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-[var(--color-modern-history)] text-[var(--color-modern-history)]">Moderní dějiny</a>
+                <a href="/matika" onclick="event.preventDefault(); showSection('matika'); closeSidebar();" class="sidebar-link block p-3 rounded hover:bg-gray-100 border-l-4 border-blue-600 text-blue-600">Matematika</a>
             </div>
         </nav>
         <!-- Odstraněný text archivu -->
@@ -2339,6 +2361,87 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span id="zoomed-image-source-text" class="info-text"></span>
         </a>
     </div>
+
+    <!-- SEKCE: MATEMATIKA -->
+    <section id="matika-section" class="hidden pb-20 pt-10">
+        <div class="max-w-4xl mx-auto mb-10 text-center px-4">
+            <p class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-blue-600 bulvar-title uppercase leading-tight">Matematika</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-xl border-t-8 border-blue-600 p-8">
+                <h2 class="text-3xl font-bold font-[var(--font-title-secondary)] mb-6 text-gray-800 text-center">
+                    Přístup k úlohám
+                </h2>
+                
+                <p class="text-lg text-gray-700 mb-6 text-center">
+                    Zadejte číslo úlohy a heslo pro přístup k souboru.
+                </p>
+                
+                <!-- Formulář pro zadání čísla úlohy a hesla -->
+                <div class="space-y-6">
+                    <div>
+                        <label for="matika-task-number" class="block text-lg font-bold font-[var(--font-title-secondary)] text-gray-800 mb-3">
+                            Číslo úlohy
+                        </label>
+                        <input 
+                            type="number" 
+                            id="matika-task-number" 
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 text-lg font-[var(--font-body)]"
+                            placeholder="Např. 1, 2, 3..."
+                            min="1"
+                            step="1">
+                    </div>
+                    
+                    <div>
+                        <label for="matika-password-input" class="block text-lg font-bold font-[var(--font-title-secondary)] text-gray-800 mb-3">
+                            Heslo
+                        </label>
+                        <input 
+                            type="password" 
+                            id="matika-password-input" 
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 text-lg font-[var(--font-body)]"
+                            placeholder="Zadejte heslo"
+                            onkeypress="if(event.key === 'Enter') checkMatikaPassword()">
+                        <div class="mt-2">
+                            <label class="flex items-center text-sm text-gray-600 cursor-pointer">
+                                <input type="checkbox" id="matika-show-password" class="mr-2" onchange="togglePasswordVisibility('matika-password-input', 'matika-show-password')">
+                                Zobrazit heslo
+                            </label>
+                        </div>
+                        <p class="mt-2 text-xs text-gray-500 text-center">Poznámka: Nezáleží na diakritice ani velikosti písmen.</p>
+                    </div>
+                    
+                    <div class="flex justify-center">
+                        <button 
+                            onclick="checkMatikaPassword()" 
+                            class="px-8 py-3 bg-blue-600 text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:bg-blue-700 transition duration-200">
+                            Otevřít úlohu
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Oblast pro zobrazení souboru po úspěšném zadání hesla -->
+                <div id="matika-file-container" class="hidden mt-8">
+                    <div class="border-t-2 border-gray-300 pt-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 id="matika-file-title" class="text-2xl font-bold font-[var(--font-title-secondary)] text-gray-800">
+                                Úloha č. <span id="matika-current-task-number"></span>
+                            </h3>
+                            <button 
+                                onclick="closeMatikaFile()" 
+                                class="px-4 py-2 bg-gray-600 text-white font-bold font-[var(--font-title-secondary)] rounded-lg hover:bg-gray-700 transition duration-200">
+                                Zavřít
+                            </button>
+                        </div>
+                        <div id="matika-file-content" class="mt-4">
+                            <!-- Zde se zobrazí obsah souboru -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ZÁPATÍ STRÁNKY -->
     <footer class="bg-gray-800 text-white mt-12 p-6">
