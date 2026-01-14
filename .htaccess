@@ -1,0 +1,21 @@
+# Povolit rewrite engine
+RewriteEngine On
+
+# Pokud požadavek není na existující soubor nebo adresář
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# A pokud není na existující soubor s příponou (obrázky, CSS, JS, PDF, atd.)
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|jpeg|png|gif|svg|webp|pdf|mp3|mp4|woff|woff2|ttf|eot|ico)$ [NC]
+
+# Přesměrovat na index.html
+RewriteRule ^(.*)$ index.html [L,QSA]
+
+# Nastavit správný MIME typ pro HTML soubory
+AddType text/html .html
+
+# Povolit CORS pro API (pokud bude potřeba)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
