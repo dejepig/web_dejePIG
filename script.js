@@ -737,7 +737,6 @@ function checkMatikaPassword() {
     
     // Validace vstupů
     if (!taskNumber || !password) {
-        playErrorSound();
         alert('Prosím vyplňte číslo úlohy i heslo.');
         return;
     }
@@ -747,7 +746,6 @@ function checkMatikaPassword() {
     const correctPassword = matikaPasswords[taskKey];
     
     if (!correctPassword) {
-        playErrorSound();
         alert('Úloha s číslem ' + taskNumber + ' neexistuje nebo nemá nastavené heslo.');
         passwordInput.value = '';
         return;
@@ -759,13 +757,11 @@ function checkMatikaPassword() {
     
     if (normalizedPassword === normalizedCorrectPassword) {
         // Správné heslo - zobrazit pouze gratulační modal
-        playSuccessSound();
         openMatikaSuccessModal();
         passwordInput.value = '';
         taskNumberInput.value = '';
     } else {
         // Špatné heslo
-        playErrorSound();
         openMatikaErrorModal();
         passwordInput.value = '';
     }
