@@ -658,8 +658,37 @@ function checkMesopotamiaPassword() {
 // Funkce pro kontrolu hesla v sekci Matematika
 // Mapa hesel pro jednotlivé úlohy (číslo úlohy: heslo)
 const matikaPasswords = {
-    // Příklad: '1': 'heslo1', '2': 'heslo2', atd.
-    // Hesla budou přidána podle potřeby
+    // Klíče jsou NORMALIZOVANÉ (bez diakritiky, malá písmena) – viz normalizeText()
+    'peter pan': '107',
+    'alenka': '723',
+    'mach a sebestova': '243',
+    'krtecek': '407',
+    'buzz raketak': '53',
+    'vaiana': '55',
+    'mimoni': '86',
+    'gru': '1010',
+    'shrek': '247',
+    'pan tau': '362',
+    'arabela': '2510',
+    'hurvinek': '108',
+    'matilda': '601',
+    'pinocchio': '639',
+    'scooby-doo': '278',
+    'bezzubka': '4510',
+    'paddington': '2010',
+    'pikachu': '121',
+    'popelka': '409',
+    'locika': '353',
+    'stitch': '8110',
+    'harry potter': '128',
+    'kevin mccallister': '407',
+    'pipi dlouha puncocha': '43',
+    'mickey mouse': '287',
+    'simba': '309',
+    'woody': '707',
+    'blesk mcqueen': '62',
+    'nemo': '327',
+    'olaf': '159'
 };
 
 // Funkce pro kontrolu hesla a zobrazení souboru v sekci Matematika
@@ -676,8 +705,9 @@ function checkMatikaPassword() {
         return;
     }
     
-    // Získat správné heslo pro danou úlohu
-    const correctPassword = matikaPasswords[taskNumber];
+    // Získat správné heslo pro danou úlohu (podporuje název i číslo)
+    const taskKey = normalizeText(taskNumber);
+    const correctPassword = matikaPasswords[taskKey];
     
     if (!correctPassword) {
         playErrorSound();
@@ -714,8 +744,8 @@ function showMatikaFile(taskNumber) {
     // Aktualizovat nadpis
     currentTaskNumber.textContent = taskNumber;
     
-    // URL souboru - předpokládáme, že soubory jsou ve formátu /matika/1.pdf, /matika/2.pdf, atd.
-    const fileUrl = `https://dejepig.wz.cz/matika/${taskNumber}.pdf`;
+    // URL souboru – použijeme encodeURIComponent, aby fungovaly i názvy se mezerami
+    const fileUrl = `https://dejepig.wz.cz/matika/${encodeURIComponent(taskNumber)}.pdf`;
     
     // Zobrazit soubor v iframe nebo jako odkaz
     fileContent.innerHTML = `
