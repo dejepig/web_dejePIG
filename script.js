@@ -710,6 +710,24 @@ function openMatikaSuccessModal() {
     openModal('matika-success-modal');
 }
 
+function openMatikaErrorModal() {
+    const gifs = [
+        'https://dejepig.wz.cz/images/nou_01.gif',
+        'https://dejepig.wz.cz/images/nou_02.gif',
+        'https://dejepig.wz.cz/images/nou_03.gif',
+        'https://dejepig.wz.cz/images/nou_04.gif',
+        'https://dejepig.wz.cz/images/nou_05.gif'
+    ];
+
+    const img = document.getElementById('matika-error-gif');
+    if (img) {
+        const randomIndex = Math.floor(Math.random() * gifs.length);
+        img.src = gifs[randomIndex];
+    }
+
+    openModal('matika-error-modal');
+}
+
 // Funkce pro kontrolu hesla a zobrazení souboru v sekci Matematika
 function checkMatikaPassword() {
     const taskNumberInput = document.getElementById('matika-task-number');
@@ -748,7 +766,7 @@ function checkMatikaPassword() {
     } else {
         // Špatné heslo
         playErrorSound();
-        alert('Nesprávné heslo. Zkuste to znovu.');
+        openMatikaErrorModal();
         passwordInput.value = '';
     }
 }
