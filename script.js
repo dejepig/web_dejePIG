@@ -691,6 +691,25 @@ const matikaPasswords = {
     'olaf': '159'
 };
 
+// Náhodný gratulační GIF pro Matematiku
+function openMatikaSuccessModal() {
+    const gifs = [
+        'https://dejepig.wz.cz/images/jes_01.gif',
+        'https://dejepig.wz.cz/images/jes_02.gif',
+        'https://dejepig.wz.cz/images/jes_03.gif',
+        'https://dejepig.wz.cz/images/jes_04.gif',
+        'https://dejepig.wz.cz/images/jes_05.gif'
+    ];
+
+    const img = document.getElementById('matika-success-gif');
+    if (img) {
+        const randomIndex = Math.floor(Math.random() * gifs.length);
+        img.src = gifs[randomIndex];
+    }
+
+    openModal('matika-success-modal');
+}
+
 // Funkce pro kontrolu hesla a zobrazení souboru v sekci Matematika
 function checkMatikaPassword() {
     const taskNumberInput = document.getElementById('matika-task-number');
@@ -721,9 +740,9 @@ function checkMatikaPassword() {
     const normalizedCorrectPassword = normalizeText(correctPassword);
     
     if (normalizedPassword === normalizedCorrectPassword) {
-        // Správné heslo - zobrazit soubor
+        // Správné heslo - zobrazit pouze gratulační modal
         playSuccessSound();
-        showMatikaFile(taskNumber);
+        openMatikaSuccessModal();
         passwordInput.value = '';
         taskNumberInput.value = '';
     } else {
