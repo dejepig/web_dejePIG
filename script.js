@@ -691,8 +691,37 @@ const matikaPasswords = {
     'olaf': '159'
 };
 
-// Náhodný gratulační GIF pro Matematiku
-function openMatikaSuccessModal() {
+// ŘEŠENÍ ÚLOH PRO MATEMATIKU (HTML obsah podle názvu úlohy)
+const matikaSolutions = {
+    // Klíče jsou normalizované stejně jako v matikaPasswords (bez diakritiky, malá písmena)
+    'mickey mouse': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mickey Mouse</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 7 = 28</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 2 = 16</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 9 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 4 = 40</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 5 = 25</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">12 : 3 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">60 : 10 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">18 : 2 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">48 : 8 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 : 1 = 7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `
+    // Další úlohy (simba, nemo, …) se dají doplnit stejným způsobem
+};
+
+// Náhodný gratulační GIF pro Matematiku + zobrazení řešení konkrétní úlohy
+function openMatikaSuccessModal(taskName) {
     const gifs = [
         'https://dejepig.wz.cz/images/jes_01.gif',
         'https://dejepig.wz.cz/images/jes_02.gif',
@@ -705,6 +734,21 @@ function openMatikaSuccessModal() {
     if (img) {
         const randomIndex = Math.floor(Math.random() * gifs.length);
         img.src = gifs[randomIndex];
+    }
+
+    // Zobrazit řešení úlohy (pokud existuje)
+    const solutionContainer = document.getElementById('matika-success-solution');
+    if (solutionContainer) {
+        const key = taskName ? normalizeText(taskName) : '';
+        const solutionHtml = key ? matikaSolutions[key] : null;
+
+        if (solutionHtml) {
+            solutionContainer.innerHTML = solutionHtml;
+            solutionContainer.classList.remove('hidden');
+        } else {
+            solutionContainer.innerHTML = '';
+            solutionContainer.classList.add('hidden');
+        }
     }
 
     openModal('matika-success-modal');
@@ -756,8 +800,8 @@ function checkMatikaPassword() {
     const normalizedCorrectPassword = normalizeText(correctPassword);
     
     if (normalizedPassword === normalizedCorrectPassword) {
-        // Správné heslo - zobrazit pouze gratulační modal
-        openMatikaSuccessModal();
+        // Správné heslo - zobrazit gratulační modal s řešením konkrétní úlohy
+        openMatikaSuccessModal(taskNumber);
         passwordInput.value = '';
         taskNumberInput.value = '';
     } else {
