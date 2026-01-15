@@ -695,9 +695,9 @@ const matikaPasswords = {
 const matikaSolutions = {
     // Klíče jsou normalizované stejně jako v matikaPasswords (bez diakritiky, malá písmena)
     'mickey mouse': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mickey Mouse</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">4 · 7 = 28</td>
@@ -718,9 +718,9 @@ const matikaSolutions = {
         </div>
     `,
     'woody': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Woody</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">1 · 1 = 1</td>
@@ -741,9 +741,9 @@ const matikaSolutions = {
         </div>
     `,
     'blesk mcqueen': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Blesk McQueen</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">5 · 9 = 45</td>
@@ -764,9 +764,9 @@ const matikaSolutions = {
         </div>
     `,
     'nemo': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Nemo</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">9 · 8 = 72</td>
@@ -787,9 +787,9 @@ const matikaSolutions = {
         </div>
     `,
     'olaf': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Olaf</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">6 · 9 = 54</td>
@@ -810,9 +810,9 @@ const matikaSolutions = {
         </div>
     `,
     'popelka': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Popelka</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">3 · 8 = 24</td>
@@ -833,9 +833,9 @@ const matikaSolutions = {
         </div>
     `,
     'locika': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Locika</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">10 · 5 = 50</td>
@@ -856,9 +856,9 @@ const matikaSolutions = {
         </div>
     `,
     'stitch': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Stitch</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">4 · 1 = 4</td>
@@ -879,9 +879,9 @@ const matikaSolutions = {
         </div>
     `,
     'harry potter': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Harry Potter</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">5 · 2 = 10</td>
@@ -902,9 +902,9 @@ const matikaSolutions = {
         </div>
     `,
     'kevin mccallister': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Kevin McCallister</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">8 · 5 = 40</td>
@@ -925,9 +925,9 @@ const matikaSolutions = {
         </div>
     `,
     'pipi dlouha puncocha': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pipi Dlouhá punčocha</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">7 · 5 = 35</td>
@@ -948,9 +948,9 @@ const matikaSolutions = {
         </div>
     `,
     'matilda': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Matilda</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">1 · 10 = 10</td>
@@ -971,9 +971,9 @@ const matikaSolutions = {
         </div>
     `,
     'pinocchio': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pinocchio</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">9 · 7 = 63</td>
@@ -994,9 +994,9 @@ const matikaSolutions = {
         </div>
     `,
     'scooby-doo': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Scooby-Doo</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">10 · 9 = 90</td>
@@ -1017,9 +1017,9 @@ const matikaSolutions = {
         </div>
     `,
     'bezzubka': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Bezzubka</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">6 · 4 = 24</td>
@@ -1040,9 +1040,9 @@ const matikaSolutions = {
         </div>
     `,
     'paddington': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Paddington</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">4 · 3 = 12</td>
@@ -1063,9 +1063,9 @@ const matikaSolutions = {
         </div>
     `,
     'pikachu': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pikachu</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">9 · 3 = 27</td>
@@ -1086,9 +1086,9 @@ const matikaSolutions = {
         </div>
     `,
     'mimoni': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mimoni</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">1 · 8 = 8</td>
@@ -1109,9 +1109,9 @@ const matikaSolutions = {
         </div>
     `,
     'gru': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Gru</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">5 · 4 = 20</td>
@@ -1132,9 +1132,9 @@ const matikaSolutions = {
         </div>
     `,
     'shrek': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Shrek</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">2 · 9 = 18</td>
@@ -1155,9 +1155,9 @@ const matikaSolutions = {
         </div>
     `,
     'pan tau': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pan Tau</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">7 · 5 = 35</td>
@@ -1178,9 +1178,9 @@ const matikaSolutions = {
         </div>
     `,
     'arabela': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Arabela</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">2 · 2 = 4</td>
@@ -1201,9 +1201,9 @@ const matikaSolutions = {
         </div>
     `,
     'hurvinek': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Hurvínek</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">7 · 7 = 49</td>
@@ -1224,9 +1224,9 @@ const matikaSolutions = {
         </div>
     `,
     'peter pan': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Peter Pan</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">2 · 5 = 10</td>
@@ -1247,9 +1247,9 @@ const matikaSolutions = {
         </div>
     `,
     'alenka': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Alenka</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">7 · 1 = 7</td>
@@ -1270,9 +1270,9 @@ const matikaSolutions = {
         </div>
     `,
     'mach a sebestova': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mach a Šebestová</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">2 · 6 = 12</td>
@@ -1293,9 +1293,9 @@ const matikaSolutions = {
         </div>
     `,
     'krtecek': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Krteček</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">7 · 8 = 56</td>
@@ -1316,9 +1316,9 @@ const matikaSolutions = {
         </div>
     `,
     'buzz raketak': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Buzz Rakeťák</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">2 · 8 = 16</td>
@@ -1339,9 +1339,9 @@ const matikaSolutions = {
         </div>
     `,
     'vaiana': `
-        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Vaiana</h3>
-            <table class="border-collapse text-lg font-[var(--font-body)]">
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
                         <td class="px-3 py-1 whitespace-nowrap">7 · 4 = 28</td>
