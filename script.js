@@ -808,6 +808,558 @@ const matikaSolutions = {
                 </tbody>
             </table>
         </div>
+    `,
+    'popelka': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Popelka</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 8 = 24</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 1 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 10 = 40</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 4 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 6 = 54</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">90 : 10 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 : 2 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">54 : 6 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">28 : 7 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 : 1 = 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'locika': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Locika</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 5 = 50</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 7 = 35</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 9 = 63</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 4 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 3 = 18</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">24 : 8 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">16 : 4 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">30 : 6 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">18 : 9 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 : 1 = 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'stitch': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Stitch</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 1 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 8 = 64</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 3 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 7 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 9 = 81</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">70 : 7 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">20 : 2 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">45 : 5 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">100 : 10 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 : 1 = 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'harry potter': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Harry Potter</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 2 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 3 = 30</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 8 = 48</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 1 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 6 = 12</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">12 : 6 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">64 : 8 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">21 : 7 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">16 : 2 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 : 1 = 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'kevin mccallister': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Kevin McCallister</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 5 = 40</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 3 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 9 = 36</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 8 = 80</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 7 = 21</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">9 : 3 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">40 : 10 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">35 : 5 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">54 : 9 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 : 1 = 10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'pipi dlouha puncocha': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pipi Dlouhá punčocha</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 5 = 35</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 2 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 10 = 60</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 2 = 18</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 8 = 40</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">24 : 6 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">72 : 8 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 : 4 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">30 : 10 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 : 9 = 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'matilda': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Matilda</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 10 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 4 = 16</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 10 = 80</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 6 = 60</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 4 = 12</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">28 : 4 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">14 : 2 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">36 : 9 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 : 6 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">50 : 10 = 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'pinocchio': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pinocchio</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 7 = 63</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 1 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 10 = 70</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 9 = 18</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 5 = 30</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">16 : 8 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">42 : 7 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">20 : 4 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">24 : 3 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">81 : 9 = 9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'scooby-doo': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Scooby-Doo</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 9 = 90</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 9 = 27</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 6 = 48</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 2 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 6 = 24</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">32 : 4 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">25 : 5 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 : 8 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">50 : 5 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">72 : 9 = 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'bezzubka': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Bezzubka</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 4 = 24</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 7 = 14</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 6 = 42</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 5 = 45</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 10 = 50</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">10 : 5 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">63 : 9 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">15 : 5 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">27 : 9 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">30 : 3 = 10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'paddington': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Paddington</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 3 = 12</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 3 = 24</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 5 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 2 = 20</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 6 = 18</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">35 : 7 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">90 : 9 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">48 : 6 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">20 : 10 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 : 1 = 10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'pikachu': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pikachu</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 3 = 27</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 2 = 12</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 4 = 28</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 3 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 6 = 30</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">24 : 4 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 : 5 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">40 : 8 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">12 : 4 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">40 : 5 = 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'mimoni': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mimoni</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 8 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 8 = 32</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 7 = 49</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 7 = 56</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 10 = 90</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">60 : 6 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">36 : 6 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 : 1 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 : 2 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">18 : 3 = 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'gru': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Gru</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 4 = 20</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 1 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 5 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 7 = 42</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 8 = 56</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">10 : 10 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">80 : 8 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">49 : 7 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">30 : 3 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">56 : 7 = 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'shrek': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Shrek</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 9 = 18</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 7 = 21</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 6 = 24</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 8 = 40</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 2 = 12</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">81 : 9 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">64 : 8 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">49 : 7 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">36 : 6 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">25 : 5 = 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'pan tau': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pan Tau</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 5 = 35</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 3 = 24</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 4 = 36</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 10 = 100</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 1 = 1</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">16 : 4 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 : 3 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 : 2 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 : 1 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">100 : 10 = 10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'arabela': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Arabela</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 2 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 3 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 4 = 16</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 5 = 25</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 6 = 36</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">90 : 9 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">80 : 8 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">70 : 7 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">60 : 6 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">50 : 5 = 10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'hurvinek': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Hurvínek</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 7 = 49</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 8 = 64</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 9 = 81</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 1 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 10 = 10</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">40 : 4 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">30 : 3 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">20 : 2 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 : 1 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">72 : 9 = 8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'peter pan': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Peter Pan</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 5 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 6 = 18</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 8 = 32</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 2 = 10</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 10 = 60</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">56 : 8 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">42 : 7 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">30 : 6 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">20 : 5 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">12 : 4 = 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'alenka': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Alenka</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 1 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 9 = 72</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 3 = 27</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 4 = 40</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 7 = 7</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">6 : 3 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 : 2 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">18 : 9 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">32 : 8 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">21 : 7 = 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'mach a sebestova': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mach a Šebestová</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 6 = 12</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 9 = 27</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 1 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 7 = 35</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 4 = 24</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">12 : 6 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">15 : 5 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 : 4 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 : 3 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">14 : 2 = 7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'krtecek': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Krteček</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 8 = 56</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 5 = 40</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 10 = 90</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 2 = 20</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 3 = 3</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">63 : 9 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">48 : 8 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">35 : 7 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">24 : 6 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 : 5 = 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'buzz raketak': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Buzz Rakeťák</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 8 = 16</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 10 = 30</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 5 = 20</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 1 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 4 = 28</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">4 : 4 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 : 5 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">27 : 9 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">24 : 8 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">28 : 7 = 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'vaiana': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Vaiana</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 4 = 28</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 2 = 16</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 6 = 54</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 3 = 30</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 5 = 5</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">18 : 6 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">15 : 3 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">12 : 2 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 : 7 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">45 : 9 = 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     `
 };
 
