@@ -716,8 +716,99 @@ const matikaSolutions = {
                 </tbody>
             </table>
         </div>
+    `,
+    'woody': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Woody</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 1 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 7 = 70</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 2 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 9 = 72</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 5 = 15</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">56 : 8 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">12 : 2 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">27 : 3 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">70 : 10 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">18 : 6 = 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'blesk mcqueen': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Blesk McQueen</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 9 = 45</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 1 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 7 = 49</td>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 1 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 10 = 100</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">8 : 4 = 2</td>
+                        <td class="px-3 py-1 whitespace-nowrap">63 : 7 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">45 : 9 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">20 : 5 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 : 1 = 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'nemo': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Nemo</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 8 = 72</td>
+                        <td class="px-3 py-1 whitespace-nowrap">4 · 5 = 20</td>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 2 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 6 = 6</td>
+                        <td class="px-3 py-1 whitespace-nowrap">8 · 4 = 32</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">21 : 3 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">80 : 10 = 8</td>
+                        <td class="px-3 py-1 whitespace-nowrap">32 : 8 = 4</td>
+                        <td class="px-3 py-1 whitespace-nowrap">42 : 6 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 : 1 = 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'olaf': `
+        <div class="inline-block bg-white rounded-lg shadow-md px-6 py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Olaf</h3>
+            <table class="border-collapse text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">6 · 9 = 54</td>
+                        <td class="px-3 py-1 whitespace-nowrap">7 · 2 = 14</td>
+                        <td class="px-3 py-1 whitespace-nowrap">2 · 10 = 20</td>
+                        <td class="px-3 py-1 whitespace-nowrap">5 · 3 = 15</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 1 = 10</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">10 : 2 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">36 : 4 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">15 : 3 = 5</td>
+                        <td class="px-3 py-1 whitespace-nowrap">49 : 7 = 7</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 : 1 = 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     `
-    // Další úlohy (simba, nemo, …) se dají doplnit stejným způsobem
 };
 
 // Náhodný gratulační GIF pro Matematiku + zobrazení řešení konkrétní úlohy
