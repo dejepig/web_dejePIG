@@ -660,7 +660,7 @@ function checkMesopotamiaPassword() {
 const matikaPasswords = {
     // Klíče jsou NORMALIZOVANÉ (bez diakritiky, malá písmena) – viz normalizeText()
     'vesmirny celer': '107',
-    'kysley kralik': '723',
+    'kysely kralik': '723',
     'anonymni preclik': '243',
     'rozmazleny toustovac': '407',
     'armadni pudink': '53',
@@ -1269,7 +1269,7 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'kysley kralik': `
+    'kysely kralik': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
             <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Kysleý králík</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
