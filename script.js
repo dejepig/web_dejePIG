@@ -659,44 +659,44 @@ function checkMesopotamiaPassword() {
 // Mapa hesel pro jednotlivé úlohy (číslo úlohy: heslo)
 const matikaPasswords = {
     // Klíče jsou NORMALIZOVANÉ (bez diakritiky, malá písmena) – viz normalizeText()
-    'peter pan': '107',
-    'alenka': '723',
-    'mach a sebestova': '243',
-    'krtecek': '407',
-    'buzz raketak': '53',
-    'vaiana': '55',
-    'mimoni': '86',
-    'gru': '1010',
-    'shrek': '247',
-    'pan tau': '362',
-    'arabela': '2510',
-    'hurvinek': '108',
-    'matilda': '601',
-    'pinocchio': '639',
-    'scooby-doo': '278',
-    'bezzubka': '4510',
-    'paddington': '2010',
-    'pikachu': '121',
-    'popelka': '409',
-    'locika': '353',
-    'stitch': '8110',
-    'harry potter': '128',
-    'kevin mccallister': '407',
-    'pipi dlouha puncocha': '43',
-    'mickey mouse': '287',
-    'simba': '309',
-    'woody': '707',
-    'blesk mcqueen': '62',
-    'nemo': '327',
-    'olaf': '159'
+    'vesmirny celer': '107',
+    'kysley kralik': '723',
+    'anonymni preclik': '243',
+    'rozmazleny toustovac': '407',
+    'armadni pudink': '53',
+    'plnotucna spravedlnost': '55',
+    'sladky hrebik': '86',
+    'modni vysavac': '1010',
+    'potravinovy nahrobek': '247',
+    'prumyslova veverka': '362',
+    'kvetinarska civava': '2510',
+    'planetarni kedluben': '108',
+    'fantasticka sesivacka': '601',
+    'rychly cesnek': '639',
+    'nemocna mycka': '278',
+    'politicka popelnice': '4510',
+    'zamilovany beton': '2010',
+    'reznicka lentilka': '121',
+    'hladovy jogurt': '409',
+    'elektronicka jitrnice': '353',
+    'televizni backora': '8110',
+    'palivy krumpac': '128',
+    'sesivany kvetinac': '407',
+    'slany vyfuk': '43',
+    'levitujici gulas': '287',
+    'nespoutany rohlik': '309',
+    'diplomaticky brambor': '707',
+    'letecky rizek': '62',
+    'radioaktivni tvaroh': '327',
+    'bezdratovy salam': '159'
 };
 
 // ŘEŠENÍ ÚLOH PRO MATEMATIKU (HTML obsah podle názvu úlohy)
 const matikaSolutions = {
     // Klíče jsou normalizované stejně jako v matikaPasswords (bez diakritiky, malá písmena)
-    'mickey mouse': `
+    'levitujici gulas': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mickey Mouse</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Levitující guláš</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -717,9 +717,32 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'woody': `
+    'nespoutany rohlik': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Woody</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Nespoutaný rohlík</h3>
+            <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
+                <tbody>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">3 · 3 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">10 · 9 = 90</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 · 1 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">1 · 0 = 0</td>
+                        <td class="px-3 py-1 whitespace-nowrap">0 · 9 = 0</td>
+                    </tr>
+                    <tr>
+                        <td class="px-3 py-1 whitespace-nowrap">9 : 3 = 3</td>
+                        <td class="px-3 py-1 whitespace-nowrap">90 : 10 = 9</td>
+                        <td class="px-3 py-1 whitespace-nowrap">9 : 9 = 1</td>
+                        <td class="px-3 py-1 whitespace-nowrap">0 : 1 = 0</td>
+                        <td class="px-3 py-1 whitespace-nowrap">0 : 9 = 0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `,
+    'diplomaticky brambor': `
+        <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Diplomatický brambor</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -740,9 +763,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'blesk mcqueen': `
+    'letecky rizek': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Blesk McQueen</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Letecký řízek</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -763,9 +786,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'nemo': `
+    'radioaktivni tvaroh': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Nemo</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Radioaktivní tvaroh</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -786,9 +809,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'olaf': `
+    'bezdratovy salam': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Olaf</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Bezdrátový salám</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -809,9 +832,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'popelka': `
+    'hladovy jogurt': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Popelka</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Hladový jogurt</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -832,9 +855,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'locika': `
+    'elektronicka jitrnice': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Locika</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Elektronická jitrnice</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -855,9 +878,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'stitch': `
+    'televizni backora': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Stitch</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Televizní bačkora</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -878,9 +901,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'harry potter': `
+    'palivy krumpac': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Harry Potter</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pálivý krumpáč</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -901,9 +924,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'kevin mccallister': `
+    'sesivany kvetinac': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Kevin McCallister</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Sešívaný květináč</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -924,9 +947,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'pipi dlouha puncocha': `
+    'slany vyfuk': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pipi Dlouhá punčocha</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Slaný výfuk</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -947,9 +970,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'matilda': `
+    'fantasticka sesivacka': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Matilda</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Fantastická sešívačka</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -970,9 +993,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'pinocchio': `
+    'rychly cesnek': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pinocchio</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Rychlý česnek</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -993,9 +1016,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'scooby-doo': `
+    'nemocna mycka': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Scooby-Doo</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Nemocná myčka</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1016,9 +1039,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'bezzubka': `
+    'politicka popelnice': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Bezzubka</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Politická popelnice</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1039,9 +1062,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'paddington': `
+    'zamilovany beton': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Paddington</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Zamilovaný beton</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1062,9 +1085,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'pikachu': `
+    'reznicka lentilka': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pikachu</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Řeznická lentilka</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1085,9 +1108,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'mimoni': `
+    'sladky hrebik': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mimoni</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Sladký hřebík</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1108,9 +1131,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'gru': `
+    'modni vysavac': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Gru</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Módní vysavač</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1131,9 +1154,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'shrek': `
+    'potravinovy nahrobek': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Shrek</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Potravinový náhrobek</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1154,9 +1177,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'pan tau': `
+    'prumyslova veverka': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Pan Tau</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Průmyslová veverka</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1177,9 +1200,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'arabela': `
+    'kvetinarska civava': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Arabela</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Květinářská čivava</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1200,9 +1223,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'hurvinek': `
+    'planetarni kedluben': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Hurvínek</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Planetární kedluben</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1223,9 +1246,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'peter pan': `
+    'vesmirny celer': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Peter Pan</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Vesmírný celer</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1246,9 +1269,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'alenka': `
+    'kysley kralik': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Alenka</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Kysleý králík</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1269,9 +1292,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'mach a sebestova': `
+    'anonymni preclik': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Mach a Šebestová</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Anonymní preclík</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1292,9 +1315,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'krtecek': `
+    'rozmazleny toustovac': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Krteček</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Rozmazlený toustovač</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1315,9 +1338,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'buzz raketak': `
+    'armadni pudink': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Buzz Rakeťák</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Armádní pudink</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
@@ -1338,9 +1361,9 @@ const matikaSolutions = {
             </table>
         </div>
     `,
-    'vaiana': `
+    'plnotucna spravedlnost': `
         <div class="inline-block max-w-full overflow-x-auto bg-white rounded-lg shadow-md px-3 py-3 sm:px-6 sm:py-4">
-            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Vaiana</h3>
+            <h3 class="text-2xl font-bold font-[var(--font-display)] text-center mb-3">Plnotučná spravedlnost</h3>
             <table class="border-collapse min-w-full text-base sm:text-lg font-[var(--font-body)]">
                 <tbody>
                     <tr>
